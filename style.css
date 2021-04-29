@@ -1,0 +1,41 @@
+body{
+  font-size: 18px;
+  color: black;
+  font-family: 'Inter', sans-serif;
+}
+
+header,main,footer{
+max-width: 760px;
+margin: 0 auto;
+}
+header,footer{
+  border: 1px solid #b5179e;
+  border-radius: 25px;
+  padding: 1rem;
+  background-color: #7209b7;
+}
+header img{
+  float: right;
+  width: 155px;
+  height: auto;
+  box-shadow: 2px 2px 2px grey;
+  position: relative;
+   top: -70px;
+   right: -6px;
+}
+h1{
+  color: white;
+}
+footer{
+  color: white;
+  text-align: center;
+}
+p{
+  color: aqua;
+}
+#footer1 {
+color: cyan;
+}
+h2{
+  font-family: 'Times New Roman', Times, serif;
+}
