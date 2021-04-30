@@ -11,8 +11,6 @@
   }
   header img{
     float: right;
-    width: 155px;
-    height: auto;
     box-shadow: 2px 2px 2px grey;
   }
 }
