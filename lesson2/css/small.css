@@ -1,5 +1,5 @@
 h1{
-  color: #7e3f8f;
+  color: white;
 }
 body{
   color: black;
@@ -31,4 +31,7 @@ p{
 h2{
   font-family: 'Times New Roman', Times, serif;
   font-size: 12px;
+}
+h3{
+  color: black;
 }
