@@ -8,12 +8,13 @@ p {
   color: black;
 }
 main img{
-  width: 155px;
+  width: 200px;
   height: auto;
   float: right;
-  border: 3px solid #73AD21;
+  border: 3px solid #b5179e;
   padding: 10px;
 }
 h2,h3{
   color:#7209b7;
+  font-size: 20px;
 }
