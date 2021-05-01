@@ -1,0 +1,16 @@
+@media(min-width: 32.5em){
+  h1{
+    font-size: 18px;
+  }
+
+  h2{
+    font-size: 15px;
+  }
+  header,footer{
+    border-radius: 25px;
+  }
+  header img{
+    float: right;
+    box-shadow: 2px 2px 2px grey;
+  }
+}

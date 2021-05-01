@@ -9,7 +9,7 @@
   header,footer{
     border-radius: 25px;
   }
-  header img{
+  main img{
     float: right;
     box-shadow: 2px 2px 2px grey;
   }
