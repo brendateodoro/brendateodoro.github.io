@@ -4,7 +4,7 @@ body{
 }
 p {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 16px;
+  font-size: 12px;
   color: black;
 }
 main img{
@@ -14,10 +14,14 @@ main img{
   border: 3px solid #b5179e;
   padding: 10px;
 }
-h2,h3{
+h2{
   color:#7209b7;
   font-size: 20px;
   font-family: 'Inter', sans-serif;
+}
+h3{
+  color: black;
+  font-size: 16px;
 }
 a{
   color: #b5179e;
