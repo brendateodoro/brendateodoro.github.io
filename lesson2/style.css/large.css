@@ -7,3 +7,7 @@ p {
   font-size: 16px;
   color: black;
 }
+main img{
+  width: 155px;
+  height: auto;
+}
