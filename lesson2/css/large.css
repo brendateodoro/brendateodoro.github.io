@@ -14,6 +14,10 @@ main img{
   border: 3px solid #b5179e;
   padding: 10px;
 }
+h1{
+  color: white;
+  text-align: left;
+}
 h2{
   color:#7209b7;
   font-family: 'Inter', sans-serif;
