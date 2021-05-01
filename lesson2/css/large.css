@@ -19,6 +19,10 @@ h2,h3{
   font-size: 20px;
   font-family: 'Inter', sans-serif;
 }
+a{
+  color: #b5179e;
+  font-size: 12px;
+}
 footer{
   color: white;
 }
