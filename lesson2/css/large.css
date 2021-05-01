@@ -30,16 +30,26 @@ grid-column: 1fr;
 #proximity.column{
 grid-column: 1fr;
 }
-contrast.column{
+#contrast.column{
 grid-column: 1fr;
 }
-h3{
-  color: black;
+#visual.parag{
+  grid-column: 1fr;
+}
+#prox.parag{
+  grid-column: 1fr;
+}
+#contrast.parag{
+  grid-column: 1fr;
 }
 a{
   color: #b5179e;
   font-size: 16px;
 }
-footer{
-  color: white;
+
+header,footer{
+  border: 1px solid #b5179e;
+  border-radius: 25px;
+  padding: 1rem;
+  background-color: #7209b7;
 }
