@@ -10,4 +10,5 @@ p {
 main img{
   width: 155px;
   height: auto;
+  align-content: left;
 }
