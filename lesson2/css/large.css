@@ -20,10 +20,13 @@ h1{
   text-align: left;
 }
 h2{
-  color:#7209b7;
   font-family: 'Inter', sans-serif;
   display: grid;
   grid-template-columns: 1fr, 1 fr, 1 fr;
+  border: 1px solid #b5179e;
+  border-radius: 25px;
+  padding: 1rem;
+  background-color: #7209b7;
 }
 #visual.column{
 grid-column: 1fr;
