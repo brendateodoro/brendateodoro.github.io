@@ -8,19 +8,20 @@
       border-radius: 15px;
   }
 
-  .heading.column {
+  .heading-column {
       grid-template-columns: 1fr 1fr 1fr;
   }
   
-  .visual.column {
+  .visual-column {
       grid-column: 1;
   }
   
-  .prox.column {
+  .prox-column {
       grid-column: 2;
   }
   
-  .contrast.column {
-      grid-column: 3;
-      grid-row: 1;
+  .contrast-column {
+    grid-column: 3;
+    grid-row: 1;
   }
+     
