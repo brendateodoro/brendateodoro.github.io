@@ -15,32 +15,15 @@ main img{
   padding: 10px;
   display: grid;
   grid-template-columns: auto;
+  align-items: center;
 }
 main{
-  display: grid;
+  margin: 0 10px 0 10px;
 }
 h2{
   font-size: 16px;
   border: 3px solid #7209b7;;
 }
-#visual.column{
-  grid-column: 1fr;
-  }
-  #proximity.column{
-  grid-column: 1fr;
-  }
-  #contrast.column{
-  grid-column: 1fr;
-  }
-  #visual.parag{
-    grid-column: 1fr;
-  }
-  #prox.parag{
-    grid-column: 1fr;
-  }
-  #contrast.parag{
-    grid-column: 1fr;
-  }
 
 a{
   color: #b5179e;
@@ -53,4 +36,22 @@ header,footer{
   padding: 1rem;
   background-color: #7209b7;
 
+}
+.heading-column{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+.visual-column {
+  grid-column: 1;
+  width: 340px;
+}
+.prox-column
+  {
+    grid-column: 1;
+    width: 340px;
+  }
+.contrast-column{
+  grid-column: 1;
+  width: 340px;
 }
