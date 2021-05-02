@@ -19,9 +19,8 @@
   .prox-column {
       grid-column: 2;
   }
-  
   .contrast-column {
     grid-column: 3;
     grid-row: 1;
   }
-     
+}
