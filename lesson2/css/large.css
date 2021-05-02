@@ -13,6 +13,7 @@ main img{
   float: right;
   border: 3px solid #b5179e;
   padding: 10px;
+  display: grid;
 }
 h1{
   color: white;
@@ -22,7 +23,7 @@ h2{
   color:#7209b7;
   font-family: 'Inter', sans-serif;
   display: grid;
-  grid-template-columns: 3fr;
+  grid-template-columns: 1fr, 1 fr, 1 fr;
 }
 #visual.column{
 grid-column: 1fr;
@@ -52,4 +53,5 @@ header,footer{
   border-radius: 25px;
   padding: 1rem;
   background-color: #7209b7;
+  color: white;
 }
