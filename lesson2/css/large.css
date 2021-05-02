@@ -19,6 +19,10 @@ main img{
 main{
   display: grid;
 }
+h2{
+  font-size: 16px;
+  border: 3px solid #7209b7;;
+}
 #visual.column{
   grid-column: 1fr;
   }
@@ -47,6 +51,6 @@ header,footer{
   border: 1px solid #b5179e;
   border-radius: 25px;
   padding: 1rem;
-  background-color: white;
+  background-color: #7209b7;
 
 }
