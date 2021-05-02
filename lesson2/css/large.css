@@ -1,3 +1,29 @@
+@media only screen and (min-width: 62.5em) {
+    
+  header {
+      border-radius: 15px;
+    }
+
+  footer {
+      border-radius: 15px;
+  }
+
+  .reading.column {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .visual.column {
+      grid-column: 1;
+  }
+  
+  .prox.column {
+      grid-column: 2;
+  }
+  
+  .contrast.column {
+      grid-column: 3;
+      grid-row: 1;
+  }
 body{
   color: black;
   font-family: 'Inter', sans-serif;
