@@ -15,37 +15,39 @@ main img{
   padding: 10px;
   display: grid;
 }
+main{
+  display: grid;
+}
+#visual.column{
+  grid-column: 1fr;
+  }
+  #proximity.column{
+  grid-column: 1fr;
+  }
+  #contrast.column{
+  grid-column: 1fr;
+  }
+  #visual.parag{
+    grid-column: 1fr;
+  }
+  #prox.parag{
+    grid-column: 1fr;
+  }
+  #contrast.parag{
+    grid-column: 1fr;
+  }
 h1{
   color: white;
   text-align: left;
 }
 h2{
   font-family: 'Inter', sans-serif;
-  display: grid;
-  grid-template-columns: 1fr, 1 fr, 1 fr;
   border: 1px solid #b5179e;
   border-radius: 25px;
   padding: 1rem;
   background-color: #7209b7;
 }
-#visual.column{
-grid-column: 1fr;
-}
-#proximity.column{
-grid-column: 1fr;
-}
-#contrast.column{
-grid-column: 1fr;
-}
-#visual.parag{
-  grid-column: 1fr;
-}
-#prox.parag{
-  grid-column: 1fr;
-}
-#contrast.parag{
-  grid-column: 1fr;
-}
+
 a{
   color: #b5179e;
   font-size: 16px;
