@@ -15,6 +15,9 @@ a{
   color:#b5179e;
   font-size: 12px;
 }
+#lastmod{
+  color: white;
+}
 
 header,footer{
   text-align: center;
