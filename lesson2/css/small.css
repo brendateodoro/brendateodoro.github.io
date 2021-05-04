@@ -43,7 +43,7 @@ header,footer{
   grid-column: 1;
   grid-row: 3;
 }
-main image{
+main img{
   display: grid;
   max-width: 100%;
   float: right;
