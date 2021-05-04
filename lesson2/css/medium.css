@@ -22,8 +22,6 @@
   }
   main img{
     display: grid;
-    max-width: 100%;
-    
   }
   #visual-img{
     grid-column: 1;

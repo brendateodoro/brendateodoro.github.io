@@ -21,8 +21,6 @@
   }
   main img{
     display: grid;
-    max-width: 100%;
-    float: right;
   }
   #visual-img{
     grid-column: 3;
