@@ -1,4 +1,4 @@
-/* Desktop Views
+/* Desktop Views */
 @media only screen and (min-width: 62.5em) {
     
   header {
@@ -11,6 +11,7 @@
 
   .heading-column {
       grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
   }
   
   .visual-column {
