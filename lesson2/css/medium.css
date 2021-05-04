@@ -8,22 +8,22 @@
       width: 100% auto;
   }
 
-  .heading-column {
+  #heading-column {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   }
   
-  .visual-column {
+  #visual-column {
       grid-column: 1;
       grid-row: 1;
   }
   
-  .prox-column {
+  #prox-column {
       grid-column: 2;
       grid-row: 1;
   }
   
-  .contrast-column {
+  #contrast-column {
       grid-column: 1;
       grid-row: 2;
   }

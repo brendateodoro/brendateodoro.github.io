@@ -23,22 +23,34 @@ header,footer{
   color: white;
 
 }
-.heading-column{
+#heading-column{
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em;
   grid-template-rows: 3fr;
 }
-.visual-column {
+#visual-column {
   grid-column: 1;
   grid-row: 1;
 }
-.prox-column
+#prox-column
   {
     grid-column: 1;
     grid-row: 2;
   }
-.contrast-column{
+#contrast-column{
   grid-column: 1;
   grid-row: 3;
+}
+main image{
+  display: grid;
+}
+#visual-img{
+  grid-column: 1;
+}
+#prox-img{
+  grid-column: 1;
+}
+#prox-imag{
+grid-column: 1;
 }
