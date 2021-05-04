@@ -10,7 +10,7 @@ main img{
   width: 200px;
   height: auto;
   float: right;
-  border: 3px solid #b5179e;
+  border: 2px solid #b5179e;
   padding: 10px;
 }
 main{
@@ -43,17 +43,14 @@ header,footer{
 }
 .visual-column {
   grid-column: 1;
-  width: 340px;
   grid-row: 1;
 }
 .prox-column
   {
     grid-column: 1;
-    width: 340px;
     grid-row: 2;
   }
 .contrast-column{
   grid-column: 1;
-  width: 340px;
   grid-row: 3;
 }
