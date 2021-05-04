@@ -21,6 +21,7 @@ header,footer{
   padding: 1rem;
   background-color: #7209b7;
   color: white;
+  text-align: center;
 
 }
 #heading-column{
@@ -44,6 +45,7 @@ header,footer{
 }
 main image{
   display: grid;
+  max-width: 100%;
 }
 #visual-img{
   grid-column: 1;
