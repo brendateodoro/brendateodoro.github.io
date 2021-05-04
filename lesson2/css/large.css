@@ -19,4 +19,17 @@
     grid-column: 3;
     grid-row: 1;
   }
+  main image{
+    display: grid;
+    max-width: 100%;
+  }
+  #visual-img{
+    grid-column: 1;
+  }
+  #prox-img{
+    grid-column: 2;
+  }
+  #prox-imag{
+  grid-column: 3;
+  }
 }

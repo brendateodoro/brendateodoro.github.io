@@ -20,5 +20,17 @@
       grid-column: 1;
       grid-row: 2;
   }
-
+  main image{
+    display: grid;
+    max-width: 100%;
+  }
+  #visual-img{
+    grid-column: 1;
+  }
+  #prox-img{
+    grid-column: 2;
+  }
+  #prox-imag{
+  grid-column: 1;
+  }
 }

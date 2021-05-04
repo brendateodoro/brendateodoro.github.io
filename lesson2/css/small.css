@@ -20,13 +20,12 @@ a{
 }
 
 header,footer{
+  text-align: center;
   border: 1px solid #b5179e;
   border-radius: 25px;
   padding: 1rem;
   background-color: #7209b7;
   color: white;
-  text-align: center;
-
 }
 #heading-column{
   display: grid;
