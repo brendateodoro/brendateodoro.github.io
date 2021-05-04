@@ -8,11 +8,7 @@
   footer {
       border-radius: 15px;
   }
-  main img{
-    width: 200px;
-    height: auto;
-    float: right;
-  }
+
   .heading-column {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
