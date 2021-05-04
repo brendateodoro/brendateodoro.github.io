@@ -4,35 +4,35 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
-    grid-template-rows: 1fr;
+    
   }
   #visual-column{
     grid-column: 1;
-    grid-row: 1;
+    
   }
   #prox-column
     {
       grid-column: 2;
-      grid-row: 1;
+      
     }
   #contrast-column{
     grid-column: 3;
-    grid-row: 1;
+   
   }
   main img{
     display: grid;
   }
   #visual-img{
     grid-column: 1;
-    grid-row: 1;
+   
   }
   #prox-img{
     grid-column: 2;
-    grid-row: 1;
+   
   }
   #contrast-img{
   grid-column: 3;
-  grid-row: 1;
+  
   }
  
 }
