@@ -3,7 +3,7 @@ body{
 }
 #content  {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 10px 0 10px;
 }
 p {
   font-family: 'Times New Roman', Times, serif;
@@ -49,6 +49,7 @@ header,footer{
 main image{
   display: grid;
   max-width: 100%;
+  float: right;
 }
 #visual-img{
   grid-column: 1;
