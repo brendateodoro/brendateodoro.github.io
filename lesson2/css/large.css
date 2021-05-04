@@ -23,6 +23,9 @@
     display: grid;
     max-width: 100%;
   }
+  main img{
+    display: grid;
+  }
   #visual-img{
     grid-column: 1;
   }
