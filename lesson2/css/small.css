@@ -5,13 +5,14 @@ body{
   max-width: 960px;
   margin: 0 10px 0 10px;
 }
+header,main,footer{
+  max-width: 760px;
+  margin: 0 auto;
+  }
 p {
   font-family: 'Times New Roman', Times, serif;
   font-size: 12px;
   color: black;
-}
-main{
-  margin: 0 10px 0 10px;
 }
 
 a{
