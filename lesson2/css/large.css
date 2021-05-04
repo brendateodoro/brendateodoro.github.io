@@ -16,10 +16,12 @@
   
   .visual-column {
       grid-column: 1;
+      grid-row: 1;
   }
   
   .prox-column {
       grid-column: 2;
+      grid-row: 1;
   }
   .contrast-column {
     grid-column: 3;

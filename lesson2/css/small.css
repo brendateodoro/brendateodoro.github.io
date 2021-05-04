@@ -39,17 +39,21 @@ header,footer{
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em;
+  grid-template-rows: 3fr;
 }
 .visual-column {
   grid-column: 1;
   width: 340px;
+  grid-row: 1;
 }
 .prox-column
   {
     grid-column: 1;
     width: 340px;
+    grid-row: 2;
   }
 .contrast-column{
   grid-column: 1;
   width: 340px;
+  grid-row: 3;
 }
