@@ -18,7 +18,7 @@
     }
   #contrast-column{
     grid-column: 1;
-    grid-row: 2;
+    
   }
   main img{
     display: grid;
