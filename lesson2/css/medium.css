@@ -12,7 +12,7 @@
   }
   
   #prox-column {
-      grid-column: 2;
+      grid-column: 1;
       grid-row: 1;
   }
   
@@ -28,7 +28,7 @@
     grid-column: 1;
   }
   #prox-img{
-    grid-column: 2;
+    grid-column: 1;
   }
   #contrast-imag{
   grid-column: 1;
