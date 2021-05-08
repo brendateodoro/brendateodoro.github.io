@@ -21,14 +21,14 @@ a{
 
 header,footer{
   text-align: center;
-  border: 1px solid #b5179e;
+  border: 1px solid #F2CDA0;
   border-radius: 25px;
   padding: 1rem;
-  background-color: #7209b7;
+  background-color: #F25244;
   color: white;
 }
 nav {
-	background-color: #36454f;
+	background-color:#F25244 ;
 	text-align: center;
 	box-shadow: 0 2px 15px gray;
 }
@@ -47,8 +47,9 @@ nav ul li a {
 	font-size: 0.95rem;
 }
 nav a:hover {
-	background-color: ##F25244;
-	color: ##F2CDA0;
+	background-color: #F2CDA0 ;
+	color: #214DA6;
+  
 }
 .img-woman, .img-men{
   padding: 5px;
