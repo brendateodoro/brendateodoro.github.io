@@ -50,3 +50,7 @@ nav a:hover {
 	background-color: #bbb;
 	color: #36454f;
 }
+#img-woman, #img-man{
+  padding: 5px;
+  width: 150px;
+}
