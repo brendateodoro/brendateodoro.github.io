@@ -23,9 +23,10 @@ header,footer{
   text-align: center;
   border: 1px solid #F2CDA0;
   border-radius: 25px;
-  padding: 1rem;
+  padding: 3rem;
   background-color: #F25244;
-  color: white;
+  color: #214DA6;;
+  
 }
 picture{
   align-content: left;
@@ -34,6 +35,7 @@ nav {
 	background-color:#F25244 ;
 	text-align: center;
 	box-shadow: 0 2px 15px gray;
+  border-radius: 25px;
 }
 nav ul {
 	list-style-type: none;
@@ -54,8 +56,21 @@ nav a:hover {
 	color: #214DA6;
   
 }
-
+#info-men{
+  display: grid;
+}
 #img-woman, #img-man{
-  max-width: 250px;
-  height: 250px;
+  grid-template-rows: auto;
+}
+
+picture{
+  position:absolute;
+  left:0;
+  top:0;
+}
+ h2{
+  color: #214DA6;
+ }
+h1{
+  color:#F2CDA0;
 }
