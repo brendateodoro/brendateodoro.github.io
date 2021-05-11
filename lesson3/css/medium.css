@@ -4,4 +4,9 @@
   nav ul li {
     float: left;
   }
+  nav ul li a {
+    border: none;
+    border-right: 1px solid #F2CDA0;
+    padding: .8rem 1rem;
+  }
 }
