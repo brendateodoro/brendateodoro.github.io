@@ -1,6 +1,7 @@
 /* Tablet Views */
 @media only screen and (min-width: 32.5em) {
   nav button {display: none;}
+  nav ul{margin: 2%;}
   nav ul li {
     float: left;
   }
