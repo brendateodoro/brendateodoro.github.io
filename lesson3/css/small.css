@@ -82,3 +82,8 @@ picture{
 h1{
   color:#F2CDA0;
 }
+.clearfix:after{
+  content: "";
+display: table;
+clear: both;
+}
