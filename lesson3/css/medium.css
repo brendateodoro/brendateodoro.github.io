@@ -1,4 +1,4 @@
 /* Tablet Views */
 @media only screen and (min-width: 32.5em) {
-  
+  nav buttom {display: none;}
 }
