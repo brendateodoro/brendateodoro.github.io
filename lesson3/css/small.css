@@ -31,6 +31,13 @@ header,footer{
 picture{
   align-content: left;
 }
+nav button{
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #555;
+}
 nav {
 	background-color:#F25244 ;
 	text-align: center;
