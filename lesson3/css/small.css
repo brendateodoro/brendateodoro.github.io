@@ -64,6 +64,9 @@ nav a:hover {
 	color: #214DA6;
   
 }
+nav ul.hide{
+display: none;
+}
 #info-men{
   display: grid;
 }
