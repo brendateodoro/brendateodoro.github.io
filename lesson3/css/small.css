@@ -59,11 +59,13 @@ nav ul li a {
 	font-size: 0.95rem;
   border-top: 1px solid #F2CDA0;
 }
+
 nav a:hover {
 	background-color: #F2CDA0;
 	color: #214DA6;
   
 }
+
 
 #info-men{
   display: grid;
@@ -88,6 +90,3 @@ h1{
 display: table;
 clear: both;
 }
-nav ul.hide{
-  display: none;
-  }
