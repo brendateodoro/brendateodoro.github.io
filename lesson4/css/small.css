@@ -30,6 +30,7 @@ header,footer{
 }
 picture{
   align-content: left;
+  float: right;
 }
 nav button{
   margin: .2rem 2%;
@@ -80,10 +81,7 @@ picture{
   left:0;
   top:0;
 }
- h2{
-  color: #214DA6;
-  font-family: 'Roboto', sans-serif;
- }
+
 h1{
   color:#F2CDA0;
   font-family: 'Roboto', sans-serif;
