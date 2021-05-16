@@ -93,3 +93,27 @@ h1{
 display: table;
 clear: both;
 }
+.hero{
+  background-color: #214DA6;
+  padding: 1rem;
+  border: 1px dashed black;
+  margin-bottom: 1rem;
+}
+.day{
+  background-color: #214DA6;
+  padding: 1rem;
+  border: 1px dashed black;
+  margin-bottom: 1rem;
+}
+.article{
+  background-color: #214DA6;
+  padding: 1rem;
+  border: 1px dashed black;
+  margin-bottom: 1rem;
+}
+.contact{
+  background-color: #214DA6;
+  padding: 1rem;
+  border: 1px dashed black;
+  margin-bottom: 1rem;
+}
