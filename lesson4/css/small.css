@@ -94,26 +94,28 @@ display: table;
 clear: both;
 }
 .hero{
-  background-color: #214DA6;
+  background-color: #F2CDA0;
   padding: 1rem;
-  border: 1px dashed #F2CDA0;
+  border: 1px dashed #214DA6;
   margin-bottom: 1rem;
 }
+
 .day{
-  background-color: #214DA6;
+  background-color: #F2CDA0;
   padding: 1rem;
-  border: 1px dashed #F2CDA0;
+  border: 1px dashed #214DA6;
   margin-bottom: 1rem;
-}
+
+  }
 .article{
-  background-color: #214DA6;
+  background-color: #F2CDA0;
   padding: 1rem;
-  border: 1px dashed #F2CDA0;
+  border: 1px dashed #214DA6;
   margin-bottom: 1rem;
 }
 .contact{
-  background-color: #214DA6;
+  background-color: #F2CDA0;
   padding: 1rem;
-  border: 1px dashed #F2CDA0;
+  border: 1px dashed #214DA6;
   margin-bottom: 1rem;
 }
