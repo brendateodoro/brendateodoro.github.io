@@ -16,17 +16,14 @@
   <body>
     <header>
       <h1>The Midwest</h1>
-      
       <h3>Everything you need, you can find in The Midwest!</h3>
     </header>
     <picture>
       <img src="images/Logo for The Midwest Website-2.png" alt="image of logo" width="200px" height="200px">
     </picture>
- 
-  <nav class="clearfix">
+<nav class="clearfix">
     <button onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
-      
       <li><a href="#" class="active">Home</a></li>
       <li><a href="#">Preston</a></li>
       <li><a href="#">Soda Springs</a></li>
@@ -35,11 +32,22 @@
       <li><a href="#">Gallery</a></li>
     </ul>
   </nav>
-  <main>
-   
-      <h2>
-       Preston Idaho
-      </h2>
+ <main>
+  <h2>
+    Preston Idaho
+   </h2>
+    <div class="pagediv">
+      <div class="page-ph"></div>
+   <section class="wheatersummary">
+     <h3>Wheater Summary</h3>
+     <p>Currently: Sunny</p>
+     <p>High: 75 °F</p>
+     <p>Wind Chill: °F</p>
+     <p>Humidity: 69% </p>
+     <p>Wind Speed: 5 mph</p>
+   </section>
+  </div>
+      
       <div class="hero">Hero with Weather Summary</div>
       <div class="day">5 Day Forecast</div>
       <div class="article">Article</div>
@@ -48,10 +56,7 @@
   <footer>
     &copy; <span id="theyear"></span> The Wheater Site | Attributions | Brenda Cristiele de Medeiros Teodoro 
     <p><span id="date"></span></p>
-     
-    
-  </footer>
+     </footer>
   <script src="js/index.js"></script>
 </body>
-
-  </html>
+ </html>
