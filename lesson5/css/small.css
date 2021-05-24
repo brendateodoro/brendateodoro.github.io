@@ -217,20 +217,34 @@ section p{
   float: right;
  
 }
-
 .contactinfo{
+  margin: 10px auto;
+    background-color: #F25244;
+    width: 100%;
+  }
+.contactmain{
   display: grid;
   grid-template-columns: 7fr;
-  margin: 10px auto;
-  background-color: #F25244;
-  border: 1px solid #F2CDA0;
+  grid-template-rows: 3fr;
 }
-.QMbmRe{
-  width: 300px;
-  height: 210px;
+
+.contactonly{
+  grid-column: 5;
+  grid-row: 1;
 }
 .social {
   grid-column: 5;
+  grid-row: 3;
   grid-gap: 10em;
+  justify-content: end;
 }
 
+
+.QMbmRe{
+  width: 300px;
+  height: 210px;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+   
