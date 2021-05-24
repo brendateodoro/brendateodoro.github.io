@@ -223,6 +223,9 @@ section p{
 .contactinfo{
   display: grid;
   grid-template-columns: 5fr;
+  margin: 10px auto;
+  background-color: #F25244;
+  border: 1px solid #F2CDA0;
 }
 .social {
   grid-column: 5;
