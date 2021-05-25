@@ -63,7 +63,7 @@ nav ul li a {
   border-top: 1px solid #F2CDA0;
 }
 
-nav a:hover {
+nav a:hover, .active {
 	background-color: #F2CDA0;
 	color: #214DA6;
   
@@ -264,7 +264,7 @@ section p{
     grid-column: 1;
     grid-row: 2;
    }
-
+   
 
 
 
