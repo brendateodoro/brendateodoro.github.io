@@ -21,11 +21,6 @@ header,footer{
 header img{
   float: right;
   width: 155px;
-  height: auto;
-  box-shadow: 2px 2px 2px grey;
-  position: relative;
-   top: -70px;
-   right: -6px;
 }
 h1{
   color: white;
