@@ -29,6 +29,7 @@ header img{
 }
 h1{
   color: white;
+  font-size: 1.5rem;
 }
 footer{
   color: white;
@@ -42,4 +43,5 @@ color: cyan;
 }
 h2{
   font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
 }

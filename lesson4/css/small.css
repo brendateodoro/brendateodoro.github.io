@@ -27,10 +27,13 @@ header,footer{
   background-color: #F25244;
   color: #214DA6;
   font-family: 'Roboto', sans-serif;
+  max-width: 960px;
 }
 picture{
-  align-content: left;
-  float: right;
+  position:absolute;
+  left:0;
+  top:0;
+  
 }
 nav button{
   margin: .2rem 2%;
@@ -77,11 +80,7 @@ nav ul.hide{
   grid-template-rows: auto;
 }
 
-picture{
-  position:absolute;
-  left:0;
-  top:0;
-}
+
 
 h1{
   color:#F2CDA0;
