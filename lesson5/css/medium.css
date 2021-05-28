@@ -27,4 +27,74 @@
 .page-ph{
   float: left;
 }
+.fiveday{
+  margin: 10px auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 2fr;
+}
+.monday{
+  border: 1px solid #214DA6;
+  padding: .5rem;
+  color: #F2CDA0;
+  font-family: sans-serif;
+  grid-column: 1;
+ grid-row: 1;
+}
+.tuesday{
+  border: 1px solid #214DA6;
+  padding: .5rem;
+  color: #F2CDA0;
+  font-family: sans-serif;
+  grid-column: 2;
+  grid-row: 1;
+
+}
+.wednesday{
+  border: 1px solid #214DA6;
+  padding: .5rem;
+  color: #F2CDA0;
+  font-family: sans-serif;
+  grid-column: 3;
+  grid-row: 1;
+
+}
+.thursday{
+  border: 1px solid #214DA6;
+  padding: .5rem;
+  color: #F2CDA0;
+  font-family: sans-serif;
+  grid-column: 1;
+  grid-row: 2;
+
+}
+.friday{
+  border: 1px solid #214DA6;
+  padding: .5rem;
+  color: #F2CDA0;
+  font-family: sans-serif;
+  grid-column: 2;
+  grid-row: 2;
+}
+#monday{
+  width: 40px;
+  height:40px;
+}
+#tuesday{
+  width: 40px;
+  height:40px;
+}
+#wednesday{
+  width: 50px;
+  height:50px;
+}
+#thursday{
+  width: 50px;
+  height: 50px;
+}
+#friday{
+  width: 40px;
+  height:40px;
+}
 }

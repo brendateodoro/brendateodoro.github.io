@@ -19,7 +19,7 @@ a{
   color: white;
 }
 
-header,footer,main {
+header,footer {
   text-align: center;
   border: 1px solid #F2CDA0;
   border-radius: 25px;
@@ -28,14 +28,11 @@ header,footer,main {
   color: #214DA6;
   font-family: 'Roboto', sans-serif;
 }
-picture{
-  position: absolute;
-  padding-left: 20px;
-  float: left;
-  text-transform: uppercase;
-  font-size: 1.4em;
-}
 
+.navigation{
+  margin: .2rem 2%;
+
+}
 nav button{
   margin: .2rem 2%;
   background-color: transparent;
@@ -58,6 +55,7 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+
 }
 nav ul li a {
 	display: block;
@@ -67,6 +65,7 @@ nav ul li a {
 	text-decoration: none;
 	font-size: 0.95rem;
   border-top: 1px solid #F2CDA0;
+ 
 }
 
 nav a:hover, .active {
@@ -76,18 +75,16 @@ nav a:hover, .active {
 }
 nav ul.hide{
   display: none;
-}
-#info-men{
-  display: grid;
-}
-#img-woman, #img-man{
-  grid-template-rows: auto;
+  
 }
 
-picture{
+
+#logo{
   position:absolute;
   left:0;
   top:0;
+  width: 200px;
+  height: 200px;
 }
 
 h1{
@@ -172,23 +169,23 @@ section p{
   margin: 10px auto;
   width: 50%;
   display: grid;
-  grid-template-columns: 5fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5fr;
 }
 .monday{
   border: 1px solid #214DA6;
   padding: .5rem;
   color: #F2CDA0;
   font-family: sans-serif;
-  grid-column: 1;
-  
+  grid-row: 1;
+ 
 }
 .tuesday{
   border: 1px solid #214DA6;
   padding: .5rem;
   color: #F2CDA0;
   font-family: sans-serif;
-  grid-column: 2;
+  grid-row: 2;
   
 
 }
@@ -197,7 +194,7 @@ section p{
   padding: .5rem;
   color: #F2CDA0;
   font-family: sans-serif;
-  grid-column: 3;
+  grid-row: 3;
   
 
 }
@@ -206,7 +203,7 @@ section p{
   padding: .5rem;
   color: #F2CDA0;
   font-family: sans-serif;
-  grid-column: 4;
+  grid-row: 4;
   
 
 }
@@ -215,8 +212,28 @@ section p{
   padding: .5rem;
   color: #F2CDA0;
   font-family: sans-serif;
-  grid-column: 5;
-
+  grid-row: 5;
+ 
+}
+#monday{
+  width: 30px;
+  height:30px;
+}
+#tuesday{
+  width: 30px;
+  height:30px;
+}
+#wednesday{
+  width: 40px;
+  height:40px;
+}
+#thursday{
+  width: 40px;
+  height: 40px;
+}
+#friday{
+  width: 30px;
+  height:30px;
 }
 .article{
   margin: 10px auto;
@@ -224,8 +241,10 @@ section p{
   border: 1px solid #F2CDA0;
 
 }
-.envi{
+#envi{
   float: right;
+  width: 150px;
+  height: 150px;
  
 }
 
@@ -271,22 +290,31 @@ section p{
    #local{
      grid-column: 4;
      grid-row: 2;
+     width: 40px;
+     height: 40px;
    }
    #tel{
      grid-column: 4;
      grid-row: 3;
+     width: 40px;
+     height: 40px;
    }
    #mail{
      grid-column: 4;
      grid-row: 4;
-   }
+     width: 40px;
+     height: 40px;
+    }
    .social {
      grid-column: 5;
      grid-row: 5;
      grid-gap: 10em;
      justify-content: end;
    }
-   
+   .social img{
+     width: 50px;
+     height: 50px;
+   }
    
    
 

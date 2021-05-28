@@ -6,5 +6,75 @@
   nav ul.hide{
     display: block;
   }
+  .fiveday{
+    margin: 10px auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-template-rows: 1fr;
+  }
+  .monday{
+    border: 1px solid #214DA6;
+    padding: .5rem;
+    color: #F2CDA0;
+    font-family: sans-serif;
+    grid-column: 1;
+    grid-row: 1;
+   
+  }
+  .tuesday{
+    border: 1px solid #214DA6;
+    padding: .5rem;
+    color: #F2CDA0;
+    font-family: sans-serif;
+    grid-column: 2;
+    grid-row: 1;
   
+  }
+  .wednesday{
+    border: 1px solid #214DA6;
+    padding: .5rem;
+    color: #F2CDA0;
+    font-family: sans-serif;
+    grid-column: 3;
+    grid-row: 1;
+  
+  }
+  .thursday{
+    border: 1px solid #214DA6;
+    padding: .5rem;
+    color: #F2CDA0;
+    font-family: sans-serif;
+    grid-column: 4;
+    grid-row: 1;
+  
+  }
+  .friday{
+    border: 1px solid #214DA6;
+    padding: .5rem;
+    color: #F2CDA0;
+    font-family: sans-serif;
+    grid-column: 5;
+    grid-row: 1;
+  }
+  #monday{
+    width: 90px;
+    height:90px;
+  }
+  #tuesday{
+    width: 90px;
+    height:90px;
+  }
+  #wednesday{
+    width: 100px;
+    height:100px;
+  }
+  #thursday{
+    width: 100px;
+    height: 100px;
+  }
+  #friday{
+    width: 90px;
+    height:90px;
+  }
 }
