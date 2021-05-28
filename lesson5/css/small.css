@@ -18,7 +18,15 @@ a{
 #lastmod{
   color: white;
 }
-
+#pancake{
+  text-align: center;
+  border: 1px solid #F2CDA0;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #214da6;
+  color: #f2cda0;
+  font-family: 'Roboto', sans-serif;
+}
 header,footer {
   text-align: center;
   border: 1px solid #F2CDA0;
