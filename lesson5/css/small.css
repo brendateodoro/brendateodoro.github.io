@@ -29,11 +29,8 @@ header,footer {
   font-family: 'Roboto', sans-serif;
 }
 
-.navigation{
-  margin: .2rem 2%;
 
-}
-nav button{
+button{
   margin: .2rem 2%;
   background-color: transparent;
   border: none;
@@ -65,7 +62,7 @@ nav ul li a {
 	text-decoration: none;
 	font-size: 0.95rem;
   border-top: 1px solid #F2CDA0;
- 
+ height: 100%;
 }
 
 nav a:hover, .active {
@@ -101,6 +98,9 @@ h2{
   content: "";
 display: table;
 clear: both;
+}
+.clearfix{
+  display: block;
 }
 
 .hero{
@@ -151,7 +151,7 @@ clear: both;
 }
 
 .wheatersummary{
-  position:absolute;
+  position:relative;
   top: 10px;
   left: 10px;
   background: radial-gradient (#F2CDA0, #F25244);
@@ -163,7 +163,7 @@ clear: both;
 }
 section p{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #fff;
+  color: #214DA6;
 }
 .fiveday{
   margin: 10px auto;

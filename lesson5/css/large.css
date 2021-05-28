@@ -3,6 +3,13 @@
   nav ul li a{
     padding: .6rem 1rem;
   }
+  header{
+    display: grid;
+    grid-template-rows: 2fr;
+  }
+  .primaryNav{
+grid-row: 2;
+  }
   nav ul.hide{
     display: block;
   }
@@ -76,5 +83,38 @@
   #friday{
     width: 90px;
     height:90px;
+  }
+  .page-ph{
+    margin: 10px auto;
+    border: 1px;
+    width: 100%;
+    height: 250px;
+    
+  }
+  .pagediv{
+    margin: 10px auto;
+    position: relative;
+    
+    
+  }
+  #view{
+    width: 100%;
+     height: 250px;
+  }
+  
+  .wheatersummary{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    background: radial-gradient (#F2CDA0, #F25244);
+    border: 1px solid #214DA6;
+    padding: .5rem;
+    box-shadow: 0 0 30px #F2CDA0;
+    color: #F2CDA0;
+    font-family: sans-serif;
+  }
+  section p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
   }
 }
