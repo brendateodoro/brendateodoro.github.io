@@ -18,30 +18,30 @@ function toggleMenu(){
  datefield.innerHTML = `<em>${fulldate}</em>`;
 
  
+
+
+
   var date = new Date();
   var dayOfWeek = date.getDay();
 
-  if (dayOfWeek == 6 ) {   //0 is Sunday, 6 is Saturday
-  document.querySelector("#pancake")
+  if (dayOfWeek !== 6 ) {   //0 is Sunday, 6 is Saturday
 
+    document.getElementById("pancake").style.display="none";
 
 } 
 else {
-    
+  document.querySelector("#pancake");
   }
   
   function doInputOutput(){
-    let tempF = parseFloat(document.getElementById("Temperature").value);
-    let speed = parseFloat(document.getElementById("WindSpeed").value);
-    let output = windChill (tempF, speed);
-    document.getElementById("output").innerHTML=output + " F";
- }
-
-
-function windChill(tempF, speed){
     let t = tempF;
     let s = speed;
- let windChill = (35.74 + .6215 * t -  35.75 * Math.pow(s , .16 ) + .4275 * t * Math.pow(s , .16));
-    return windChill;
-}
+   let windChill = (35.74 + .6215 * t -  35.75 * Math.pow(s , .16 ) + .4275 * t * Math.pow(s , .16));
+      let output = windChill;
 
+      if (t <= 50 && speed > 3.0){
+        document.getElementById("output").innerHTML=output + " F";
+      } else{
+        return N/A;
+ }
+ }

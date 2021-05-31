@@ -21,13 +21,13 @@ function toggleMenu(){
   var date = new Date();
   var dayOfWeek = date.getDay();
 
-  if (dayOfWeek == 6 ) {   //0 is Sunday, 6 is Saturday
-  document.querySelector("#pancake")
+  if (dayOfWeek !== 6 ) {   //0 is Sunday, 6 is Saturday
 
+    document.getElementById("pancake").style.display="none";
 
 } 
 else {
-    
+  document.querySelector("#pancake");
   }
   
  
