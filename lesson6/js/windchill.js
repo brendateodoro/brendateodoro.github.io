@@ -30,3 +30,18 @@ else {
     
   }
   
+  function doInputOutput(){
+    let tempF = parseFloat(document.getElementById("Temperature").value);
+    let speed = parseFloat(document.getElementById("WindSpeed").value);
+    let output = windChill (tempF, speed);
+    document.getElementById("output").innerHTML=output + " F";
+ }
+
+
+function windChill(tempF, speed){
+    let t = tempF;
+    let s = speed;
+ let windChill = (35.74 + .6215 * t -  35.75 * Math.pow(s , .16 ) + .4275 * t * Math.pow(s , .16));
+    return windChill;
+}
+
