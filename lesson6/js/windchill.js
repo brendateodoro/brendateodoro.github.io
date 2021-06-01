@@ -33,15 +33,17 @@ else {
   document.querySelector("#pancake");
   }
   
-  function doInputOutput(){
+  function doInputOutput(tempF, speed){
     let t = tempF;
     let s = speed;
    let windChill = (35.74 + .6215 * t -  35.75 * Math.pow(s , .16 ) + .4275 * t * Math.pow(s , .16));
-      let output = windChill;
+     let result= windChill;
 
-      if (t <= 50 && speed > 3.0){
-        document.getElementById("output").innerHTML=output + " F";
+   
+
+      if (t <= 50 && s > 3.0){
+        return function windChill(t,s);
       } else{
-        return N/A;
+        document.getElementById("output").style.display="none";
  }
  }
