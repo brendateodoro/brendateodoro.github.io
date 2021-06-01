@@ -29,21 +29,19 @@ function toggleMenu(){
     document.getElementById("pancake").style.display="none";
 
 } 
-else {
-  document.querySelector("#pancake");
+
+  let tempF = parseFloat(document.querySelector("#tempF").textContent);
+  let speed = parseFloat(document.querySelector("#speed").textContent);
+ 
+
+  if (tempF <= 50 && speed > 3.0){
+    let result = windChill(temp, speed);
+    document.querySelector("#output").textContent = result
+  } else{
+    document.querySelector("#output").textContent = "N/A";
   }
-  
-  function doInputOutput(tempF, speed){
-    let t = tempF;
-    let s = speed;
-   let windChill = (35.74 + .6215 * t -  35.75 * Math.pow(s , .16 ) + .4275 * t * Math.pow(s , .16));
-     let result= windChill;
 
-   
-
-      if (t <= 50 && s > 3.0){
-        return function windChill(t,s);
-      } else{
-        document.getElementById("output").style.display="none";
- }
- }
+function windChill(t, s){
+  let windChill = (35.74 + .6215 * t -  35.75 * Math.pow(s , .16 ) + .4275 * t * Math.pow(s , .16));
+  return windChill;
+}
