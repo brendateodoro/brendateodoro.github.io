@@ -49,17 +49,19 @@
     <div class="pagediv">
       <div class="page-ph">
         <picture>
-          <source media="(max-width: 500px)" srcset="images">
-        <img id="view" src="images/wdd230_image_franklinOriginal.jpeg" alt="image of a view.">
+          <source media="(min-width: 900px)" srcset="images/image-large.jpg">
+          <source media="(min-width:500px)" srcset="images/image-medium.jpg">
+          <source media="(min-width: 300px)" srcset="images/image-small.jpg">
+          <img id="view" src="images/wdd230_image_franklinOriginal.jpeg" alt="image of a view">
         </picture>
       </div>
    <section class="wheatersummary">
      <h3>Wheater Summary</h3>
      <p>Currently: Sunny</p>
-   <p>High: <span id="tempF">54°F</span></p> 
+   <p>High: <span id="tempF">50°F</span></p> 
    <p>Wind Chill: <span id="output"> </span></p>
      <p>Humidity: 69% </p>
-     <p>Wind Speed: <span id="speed">12°F</span></p> 
+     <p>Wind Speed: <span id="speed">10 mph</span></p> 
    </section>
   </div>
       <h2>Five Day Forecast</h2> 
