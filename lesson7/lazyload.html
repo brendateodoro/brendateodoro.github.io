@@ -7,27 +7,27 @@
     <meta
     name="description"
     content="~This page will serve as an assignment which you hold five images."/>
-    <link rel="stylesheet" href="lazyload.html">
-    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="stylesheet" href="css/lazyload.css">
+   
   </head>
   <body>
       <h1>Progresive Loading of Images</h1>
       <picture>
-        <img src="images/pexels-photo-1741205.jpg" alt="Brenda Teodoro's face">
+        <img id="first" src="images/pexels-photo-1741205.jpg" data-src="images/PLACEHOLDER.png"  alt="Brenda Teodoro's face">
       </picture>
       
       <picture>
-<img src="images/pexels-photo-3041340.jpg" alt="image of cat">
+<img id="second" src="images/pexels-photo-3041340.jpg" data-src="images/PLACEHOLDER.png" alt="image of cat">
       </picture>
       <picture>
-<img src="images/pexels-photo-2272939.jpg" alt="image of Paris">
+<img id="third" src="images/pexels-photo-2272939.jpg" data-src="images/PLACEHOLDER.png" alt="image of Paris">
       </picture>
       <picture>
-<img src="images/pexels-photo-2346915.jpg" alt="image of street">
+<img id="forth" src="images/pexels-photo-2346915.jpg" data-src="images/PLACEHOLDER.png" alt="image of street">
       </picture>
       <picture>
-
+        <img src='images/pexels-photo-3079710.jpg' data-src="images/PLACEHOLDER.png" alt='image of a view'>
       </picture>
-      <script src="lazyload.js" defer></script>
+      <script src="js/lazyload.js" defer></script>
       </body>
       </html>

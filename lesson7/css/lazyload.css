@@ -1,16 +1,31 @@
 .gallery{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
-picture{
+#first{
   grid-column: 1;
-  grid-row: auto;
+  grid-row: 2;
+}
+#second{
+  grid-column: 1;
+  grid-row: 2;
+}
+#third{
+  grid-column: 1;
+  grid-row: 3;
+}
+#forth{
+  grid-column: 1;
+  grid-row: 4;
+}
+
+img {
+  border: 1px solid #333;
+  filter: blur(0em);
+  transition: filter 0.5s;
+  padding: 2px;
 }
 img[data-src] {
   filter: blur(0.2em);
-}
-img {
-  filter: blur(0em);
-  transition: filter 0.5s;
 }
