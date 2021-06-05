@@ -35,6 +35,7 @@ header,footer {
   background-color: #F25244;
   color: #214DA6;
   font-family: 'Roboto', sans-serif;
+  max-width: 100%;
 }
 
 
