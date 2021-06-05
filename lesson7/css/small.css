@@ -96,6 +96,13 @@ h1{
 display: table;
 clear: both;
 }
+figcaption {
+  background-color: #F25244;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
 .gallery{
   display: grid;
   grid-template-columns: 1fr;
