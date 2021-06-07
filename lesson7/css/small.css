@@ -108,8 +108,8 @@ figcaption {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 9fr;
-  gap: 20px 5px;
-  align-content: center;
+ grid-gap: 25px;
+ 
 }
 #one{
   grid-column: 1;
