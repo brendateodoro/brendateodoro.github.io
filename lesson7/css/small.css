@@ -109,6 +109,7 @@ figcaption {
   grid-template-columns: 1fr;
   grid-template-rows: 9fr;
   gap: 20px 5px;
+  align-content: center;
 }
 #one{
   grid-column: 1;
