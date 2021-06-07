@@ -3,7 +3,7 @@
   nav ul li a{
     padding: .6rem 1rem;
   }
-  header{
+  header, footer{
     display: grid;
     grid-template-rows: 2fr;
     width: 100%;
