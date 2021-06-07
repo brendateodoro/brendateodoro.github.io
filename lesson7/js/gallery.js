@@ -58,4 +58,4 @@ function getNumberOfDays(start, end) {
 
   return diffInDays;
 }
-window.localStorage.setItem("date1", "date2");
+localStorage.setItem('visit_var', * value-being-used**);
