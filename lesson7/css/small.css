@@ -26,7 +26,7 @@ header,footer {
   background-color: #F25244;
   color: #214DA6;
   font-family: 'Roboto', sans-serif;
-  width: 100%;
+  
 }
 
 
@@ -108,10 +108,12 @@ figcaption {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 9fr;
+  gap: 20px 5px;
 }
 #one{
   grid-column: 1;
   grid-row: 1;
+
 }
 #two{
   grid-column: 1;
