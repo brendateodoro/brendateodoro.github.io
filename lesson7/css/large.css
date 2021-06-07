@@ -6,7 +6,7 @@
   header, footer{
     display: grid;
     grid-template-rows: 2fr;
-   
+   width: auto;
   }
   .primaryNav{
 grid-row: 2;

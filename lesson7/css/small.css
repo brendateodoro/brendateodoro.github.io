@@ -26,7 +26,7 @@ header,footer {
   background-color: #F25244;
   color: #214DA6;
   font-family: 'Roboto', sans-serif;
-  
+  width: auto;
 }
 
 
@@ -108,7 +108,12 @@ figcaption {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 9fr;
- grid-gap: 25px;
+  column-gap: 1px;
+  row-gap: 1px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-items: center;
  
 }
 #one{
