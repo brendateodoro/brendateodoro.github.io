@@ -104,18 +104,19 @@ figcaption {
   padding: 2px;
   text-align: center;
 }
+figure:hover{
+  box-shadow: 0 0 11px #F25244; 
+}
 .gallery{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 9fr;
-  column-gap: 1px;
-  row-gap: 1px;
   margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left:10px;
+  margin-right:10px;
   justify-items: center;
- 
 }
+
 #one{
   grid-column: 1;
   grid-row: 1;
