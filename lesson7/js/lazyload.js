@@ -22,7 +22,7 @@ if('IntersectionObserver' in window) {
       }
     });
   },imgOptions);
-  
+
   imagesToLoad.forEach((img) => {
     observer.observe(img);
   });
@@ -31,5 +31,7 @@ if('IntersectionObserver' in window) {
     loadImages(img);
   });
 }
+
+
 
 
