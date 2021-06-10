@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: Ubuntu, sans-serif;
 }
 
 table {
@@ -14,22 +14,31 @@ td, th {
   padding: 10px 20px;
 }
 
-th {
-  background-color: rgb(235,235,235);
-}
+
 
 td {
   text-align: center;
 }
 
 tr:nth-child(even) td {
-  background-color: rgb(250,250,250);
+  background-color: #e7ffed;
 }
 
 tr:nth-child(odd) td {
-  background-color: rgb(245,245,245);
+  background-color: #e7f0ed;
 }
 
 caption {
   padding: 10px;
+}
+th{
+  background-color: #628ca6;
+  color: white;
+}
+thead{
+  background-color: #7fb9c2;
+  color: black;
+}
+tfoot{
+  background-color: #7fb9c2;
 }
