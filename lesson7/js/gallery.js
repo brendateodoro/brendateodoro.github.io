@@ -42,7 +42,7 @@ if('IntersectionObserver' in window) {
     loadImages(img);
   });
 }
-
+localStorage.getItem('visit_var');
 function getNumberOfDays(start, end) {
   const date1 = new Date(start);
   const date2 = new Date(end);
@@ -56,6 +56,6 @@ function getNumberOfDays(start, end) {
   // Calculating the no. of days between two dates
   const diffInDays = Math.round(diffInTime / oneDay);
 
-  return diffInDays;
+  return diffInDays = "Your last visit was: ";
 }
 
