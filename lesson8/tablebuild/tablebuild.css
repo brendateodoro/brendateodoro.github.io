@@ -8,13 +8,24 @@ table {
   letter-spacing: 1px;
   font-size: 0.8rem;
 }
+thead{
+  background-color: #7fb9c2;
+  color: black;
+ font-size: 16px;
+}
+tfoot{
+  background-color: #7fb9c2;
+}
 
 td, th {
   border: 1px solid rgb(190,190,190);
   padding: 10px 20px;
 }
 
-
+th{
+  background-color: #628ca6;
+  color: white;
+}
 
 td {
   text-align: center;
@@ -24,21 +35,14 @@ tr:nth-child(even) td {
   background-color: #e7ffed;
 }
 
-tr:nth-child(odd) td {
+tbody {
   background-color: #e7f0ed;
 }
 
 caption {
   padding: 10px;
 }
-th{
+#only{
   background-color: #628ca6;
   color: white;
-}
-thead{
-  background-color: #7fb9c2;
-  color: black;
-}
-tfoot{
-  background-color: #7fb9c2;
 }
