@@ -1,12 +1,13 @@
 html {
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 table {
   border-collapse: collapse;
-  border: 2px solid rgb(200,200,200);
+  border: 2px solid #e7f0ed;
   letter-spacing: 1px;
   font-size: 0.8rem;
+  box-shadow: 5px 10px 18px #628ca6;
 }
 thead{
   background-color: #7fb9c2;
@@ -31,7 +32,7 @@ td {
   text-align: center;
 }
 
-tr:nth-child(even) td {
+tbody:nth-child(odd) {
   background-color: #e7ffed;
 }
 
