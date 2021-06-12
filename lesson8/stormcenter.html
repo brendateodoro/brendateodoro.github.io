@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My galley page for assignment</title>
+    <title>My storm center page for assignment</title>
     <meta
     name="description"
     content="~This page will serve as an assignment which you serve as a galley."/>
@@ -33,8 +33,8 @@
     <li><a href="#" >Preston</a></li>
     <li><a href="#">Soda Springs</a></li>
     <li><a href="#">Fish Haven</a></li>
-    <li><a href="#">Storm Center</a></li>
-    <li><a href="#" class="active">Gallery</a></li>
+    <li><a href="#" class="active">Storm Center</a></li>
+    <li><a href="#">Gallery</a></li>
   </ul>
   
 </nav>
@@ -44,9 +44,42 @@
         
       <form method="get" action="thanks.html">
          <fieldset>
-           <legend>Applicant Information</legend>
+           <legend>Storm Center Applicant Information</legend>
            <label class="top">First Name*<input type="text" name="fname" required></label>
- 
+           <label class="top">Email*<input type="email" name="email" placeholder="someone@email.com"></label>
+           <label class="top">Phone<input type="tel" name="phone"></label>
+           <label class="top">Zip Code*<input type="number" name="zip" required></label>
+           <label class="top">Storm Date <input type="date" name=completeData></label>
+           <label for="storm-type-choice">Storm Type
+          </label>
+            <input list="storm-type" id="storm-type-choice" name="storm-type-choice" />
+            <datalist id="storm-type">
+              <option value="Flash Flood">
+              <option value="Hail">
+          <option value="Hurricane">
+              <option value="Thunderstorm">
+          <option value="Tornado">
+            </datalist>
+          
+          <label class="severity">Storm Severity
+            <label for="volume">1</label><input type="range" id="volume" name="volume"
+         min="1" max="10">
+         
+  <label for="volume">10</label>
+</label>
+<label class="top">Storm Region
+  <select name="region">
+    <option value="">Select Region... &#9662;</option>
+    <option value="preston">Preston</option>
+    <option value="soda">Soda Springs</option>
+<option value="fish">Fish Haven</option>
+    
+  </select>
+</label>
+<div>Danger Level</div>
+<label class="sbs"><input type="radio" name="audience" value="yes">Yes</label>
+ <label class="sbs"><input type="radio" name="audience" value="maybe">Maybe</label>
+ <label class="sbs"><input type="radio" name="audience" value="no">No</label>
     <footer>
       &copy;  <span id="diffInDays"></span>
    
