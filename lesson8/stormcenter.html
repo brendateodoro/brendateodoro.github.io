@@ -62,7 +62,7 @@
             </datalist>
           
             <label class="top" for="rating">Storm Range: &nbsp;&nbsp;&nbsp;
-              <input type="range" id="rating" value="" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+              <input type="range" id="rating" value="ratio" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
               <span id="ratingvalue"></span>
             </label>
         
@@ -99,6 +99,7 @@
 
 </textarea>
 <input type="submit" value="Send My Storm Center Application" class="submitBtn">
+</fieldset>
 </form>     
     <footer>
       &copy;  <span id="diffInDays"></span>

@@ -57,5 +57,7 @@ function getNumberOfDays(start, end) {
   const diffInDays = Math.round(diffInTime / oneDay);
 
   return diffInDays = "Your last visit was: ";
+  getItem(start,end)
 }
+
 
