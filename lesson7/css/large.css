@@ -14,7 +14,9 @@ grid-row: 2;
   nav ul.hide{
     display: block;
   }
-
+  figure:hover{
+    box-shadow: 0 0 11px #F25244; 
+  }
   .gallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
