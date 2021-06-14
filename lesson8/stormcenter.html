@@ -61,10 +61,10 @@
           <option value="Tornado">
             </datalist>
           
-            <label class="top" for="rating">Storm Range: &nbsp;&nbsp;&nbsp;
-              <input type="range" id="rating" value="ratio" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            <label class="top" for="rating">Storm Range: &nbsp;&nbsp;&nbsp;          </label>
+              <input type="range" id="rating"  min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
               <span id="ratingvalue"></span>
-            </label>
+  
         
             <datalist id="tickmarks">
               <option value="0">
@@ -92,12 +92,11 @@
 <label class="sbs"><input type="radio" name="audience" value="yes">Yes</label>
  <label class="sbs"><input type="radio" name="audience" value="maybe">Maybe</label>
  <label class="sbs"><input type="radio" name="audience" value="no">No</label>
- <label class="top" for="comment">Additional comments: </label>
+ <label class="top" for="comment">Add any comments:</label>
 
-<textarea id="story" name="story"
-          rows="5" cols="33">
-
-</textarea>
+ <textarea id="comment" name="w3review" rows="4" cols="50">
+ 
+ </textarea>
 <input type="submit" value="Send My Storm Center Application" class="submitBtn">
 </fieldset>
 </form>     
