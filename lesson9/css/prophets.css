@@ -1,4 +1,4 @@
-body{
+header,main,footer{
   border: 1px solid #ccc;
   padding:15px;
   background-color: #eee;
@@ -19,7 +19,8 @@ footer{
   display: grid;
 }
 section img{
-  width: 100px;
+  width: 100%;
+  box-shadow:0 0 50px #000;
 }
 .purple{
   color: purple;
