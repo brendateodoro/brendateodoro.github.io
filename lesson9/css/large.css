@@ -1,0 +1,17 @@
+/* Desktop Views */
+@media only screen and (min-width: 67.5em) {
+  nav ul li a{
+    padding: .6rem 1rem;
+  }
+  header, footer{
+    display: grid;
+    grid-template-rows: 2fr;
+   width: auto;
+  }
+  .primaryNav{
+grid-row: 2;
+  }
+  nav ul.hide{
+    display: block;
+  }
+}
