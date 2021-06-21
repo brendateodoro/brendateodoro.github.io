@@ -120,7 +120,7 @@ h1{
 	grid-column: 2;
 }
 
-.towns section:nth-child(odd) h2,p,.pop,.box,.motto,.an {
+.towns section:nth-child(odd) .text{
 	grid-column: 1;
 	grid-row: 1;
 }

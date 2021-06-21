@@ -43,12 +43,13 @@ fetch(requestURL)
     let annual = document.createElement("annual");
     let img = document.createElement("img");
 
-    h2.innerHTML = `<span class="box"> ${towns[i].name}</span>`;
+    h2.innerHTML = `<span class="text"><span class="box"> ${towns[i].name}</span>`;
     p.innerHTML =  `<span class="motto"> ${towns[i].motto}</span>`;
     year.innerHTML = '<br> Year Founded: ' + `${towns[i].yearFounded}</br>`;
-    population.innerHTML = '<span class="pop"><br> Population: ' + `${towns[i].currentPopulation}</br></span>`;
+    population.innerHTML = '<br> Population: ' + `${towns[i].currentPopulation}</br>`;
  
-    annual.innerHTML = '<span class="an"><br> Annual Rain Fall: ' + `${towns[i].averageRainfall}</br></span>`;
+    annual.innerHTML = '<br> Annual Rain Fall: ' + `${towns[i].averageRainfall}</br></span>`;
+  
     img.setAttribute('src', `images/${towns[i].photo}`);
 img.setAttribute("alt",  "Photos of the towns" + towns[i].name);
     
