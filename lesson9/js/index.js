@@ -40,16 +40,20 @@ fetch(requestURL)
     let year = document.createElement("year");
     let population = document.createElement("population");
     let annual = document.createElement("annual");
+    let img = document.createElement("img");
     h2.innerHTML = `<span class="box"> ${towns[i].name}</span>`;
     p.innerHTML =  `<span class="motto"> ${towns[i].motto}</span>`;
     year.innerHTML = '<br> Year Founded: ' + `${towns[i].yearFounded}</br>`;
     population.innerHTML = '<br> Population: ' + `${towns[i].currentPopulation}</br>`;
     annual.innerHTML = '<br> Annual Rain Fall: ' + `${towns[i].averageRainfall}</br>`;
+    img.setAttribute('src', `images/${towns.photo}`);
+img.setAttribute("alt",  `Photos of the towns ${towns.name}!`);
       card.append(h2);
       card.append(p);
       card.append(year);
       card.append(population);
       card.append(annual);
+      card.append(img);
       document.querySelector('div.cards').appendChild(card);
     }
       });

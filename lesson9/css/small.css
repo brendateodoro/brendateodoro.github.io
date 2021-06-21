@@ -112,19 +112,20 @@ h1{
   height: 40px;
  }
  .towns{
-   grid-column: 3;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr;
  }
  .cards{
  grid-template-columns: auto;
 }
 #soda{
-grid-template-columns: 1;
+grid-column: 1;
 }
 #fish{
-grid-template-columns: 2;
+grid-column: 2;
 }
 #preston{
-  grid-template-columns: 3;
+ grid-column: 3;
 }
 main{
   border: 1px solid #ccc;
