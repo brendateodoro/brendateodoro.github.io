@@ -111,23 +111,24 @@ h1{
   width: 40px;
   height: 40px;
  }
-section {
+.towns section {
   display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 
-section:nth-child(odd) img {
+.towns section:nth-child(odd) img {
 	grid-column: 2;
 }
 
-section:nth-child(odd) .towns {
+.towns section:nth-child(odd) h2,p,.pop,.box,.motto,.an {
 	grid-column: 1;
 	grid-row: 1;
 }
+.towns section:nth-child(even) img {
+grid-column: 1;
+}
 
-img {width: 100%; height: auto;padding:0;}
-.data {background-color:#000; color:#fff;}
-p {padding: .75rem;}
+
 
 main section{
   margin-left: 25px;

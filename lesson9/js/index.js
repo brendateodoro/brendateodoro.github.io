@@ -46,9 +46,9 @@ fetch(requestURL)
     h2.innerHTML = `<span class="box"> ${towns[i].name}</span>`;
     p.innerHTML =  `<span class="motto"> ${towns[i].motto}</span>`;
     year.innerHTML = '<br> Year Founded: ' + `${towns[i].yearFounded}</br>`;
-    population.innerHTML = '<br> Population: ' + `${towns[i].currentPopulation}</br>`;
+    population.innerHTML = '<span class="pop"><br> Population: ' + `${towns[i].currentPopulation}</br></span>`;
  
-    annual.innerHTML = '<br> Annual Rain Fall: ' + `${towns[i].averageRainfall}</br>`;
+    annual.innerHTML = '<span class="an"><br> Annual Rain Fall: ' + `${towns[i].averageRainfall}</br></span>`;
     img.setAttribute('src', `images/${towns[i].photo}`);
 img.setAttribute("alt",  "Photos of the towns" + towns[i].name);
     
