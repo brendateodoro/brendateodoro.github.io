@@ -111,9 +111,11 @@ h1{
   width: 40px;
   height: 40px;
  }
+ .towns{
+   grid-column: 3;
+ }
  .cards{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+ grid-template-columns: auto;
 }
 #soda{
 grid-template-columns: 1;

@@ -32,8 +32,8 @@ fetch(requestURL)
   .then(function (jsonObject) {
    //   console.table(jsonObject);  // temporary checking for valid response and data parsing
    const towns = jsonObject['towns'];
-   const towns = towns.filter(x=>x.name == "Preston" || x.name == "Soda Springs" || x.name == "Fish Haven");
-   for (let i = 0; i < towns.length; i++ ) {
+   const name = towns.filter(x=>x.name == "Preston" || x.name == "Soda Springs" || x.name == "Fish Haven");
+   for (let i = 0; i < name.length; i++ ) {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let p = document.createElement("p");
