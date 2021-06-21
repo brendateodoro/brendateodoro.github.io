@@ -32,22 +32,24 @@ fetch(requestURL)
   .then(function (jsonObject) {
    //   console.table(jsonObject);  // temporary checking for valid response and data parsing
    const towns = jsonObject['towns'];
+   const towns = towns.filter(x=>x.name == "Preston" || x.name == "Soda Springs" || x.name == "Fish Haven");
    for (let i = 0; i < towns.length; i++ ) {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let p = document.createElement("p");
     let year = document.createElement("year");
-    let img = document.createElement("img");
+    let population = document.createElement("population");
+    let annual = document.createElement("annual");
     h2.innerHTML = `<span class="box"> ${towns[i].name}</span>`;
-    img.setAttribute('src', towns[i].photo);
-    img.setAttribute("alt", "The official photo $towns[i].photo}!");
-    p.innerHTML = ' ' + `${towns[i].motto}`;
-    year.innerHTML = 'Year Founded: ' + `${towns[i].yearFounded}`;
+    p.innerHTML =  `<span class="motto"> ${towns[i].motto}</span>`;
+    year.innerHTML = '<br> Year Founded: ' + `${towns[i].yearFounded}</br>`;
+    population.innerHTML = '<br> Population: ' + `${towns[i].currentPopulation}</br>`;
+    annual.innerHTML = '<br> Annual Rain Fall: ' + `${towns[i].averageRainfall}</br>`;
       card.append(h2);
       card.append(p);
-      card.append(place);
-      card.append(img);
-    
+      card.append(year);
+      card.append(population);
+      card.append(annual);
       document.querySelector('div.cards').appendChild(card);
     }
       });

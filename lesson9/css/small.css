@@ -111,3 +111,49 @@ h1{
   width: 40px;
   height: 40px;
  }
+ .cards{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+#soda{
+grid-template-columns: 1;
+}
+#fish{
+grid-template-columns: 2;
+}
+#preston{
+  grid-template-columns: 3;
+}
+main{
+  border: 1px solid #ccc;
+  padding:15px;
+  background-color: #eee;
+}
+main section{
+  margin-left: 25px;
+
+}
+section img{
+  width: 100%;
+  box-shadow:0 0 50px #000;
+  
+}
+section{
+  border: 1px solid #F2CDA0;
+  padding:15px;
+  background-color: #B6B6C9;
+}
+.box{
+  color: #F25244;
+  font-family: 'Bree Serif', serif;
+}
+h1{
+  align-items: center;
+  color: #F2CDA0;
+  font-family: 'Bree Serif', serif;
+}
+.motto{
+  font-style: italic;
+  color: #214DA6;
+  font-size: 15px;
+}
