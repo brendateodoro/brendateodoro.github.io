@@ -111,27 +111,24 @@ h1{
   width: 40px;
   height: 40px;
  }
- .towns{
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr;
- }
- .cards{
- grid-template-columns: auto;
+section {
+  display: grid;
+	grid-template-columns: 1fr 1fr;
 }
-#soda{
-grid-column: 1;
+
+section:nth-child(odd) img {
+	grid-column: 2;
 }
-#fish{
-grid-column: 2;
+
+section:nth-child(odd) .towns {
+	grid-column: 1;
+	grid-row: 1;
 }
-#preston{
- grid-column: 3;
-}
-main{
-  border: 1px solid #ccc;
-  padding:15px;
-  background-color: #eee;
-}
+
+img {width: 100%; height: auto;padding:0;}
+.data {background-color:#000; color:#fff;}
+p {padding: .75rem;}
+
 main section{
   margin-left: 25px;
 

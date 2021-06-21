@@ -23,4 +23,19 @@ header,footer{
   border-radius: 25px;
   width: auto;
  }
+ .towns{
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+ }
+ 
+#soda{
+grid-column: 1;
+}
+#fish{
+grid-column: 1;
+}
+#preston{
+ grid-column: 1;
+}
+
 }

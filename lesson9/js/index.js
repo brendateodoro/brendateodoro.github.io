@@ -32,8 +32,9 @@ fetch(requestURL)
   .then(function (jsonObject) {
    //   console.table(jsonObject);  // temporary checking for valid response and data parsing
    const towns = jsonObject['towns'];
-   const name = towns.filter(x=>x.name == "Preston" || x.name == "Soda Springs" || x.name == "Fish Haven");
-   for (let i = 0; i < name.length; i++ ) {
+   
+   for (let i = 0; i < towns.length; i++ ) {
+    if (towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven" || towns[i].name == "Preston") {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let p = document.createElement("p");
@@ -41,13 +42,16 @@ fetch(requestURL)
     let population = document.createElement("population");
     let annual = document.createElement("annual");
     let img = document.createElement("img");
+
     h2.innerHTML = `<span class="box"> ${towns[i].name}</span>`;
     p.innerHTML =  `<span class="motto"> ${towns[i].motto}</span>`;
     year.innerHTML = '<br> Year Founded: ' + `${towns[i].yearFounded}</br>`;
     population.innerHTML = '<br> Population: ' + `${towns[i].currentPopulation}</br>`;
+ 
     annual.innerHTML = '<br> Annual Rain Fall: ' + `${towns[i].averageRainfall}</br>`;
-    img.setAttribute('src', `images/${towns.photo}`);
-img.setAttribute("alt",  `Photos of the towns ${towns.name}!`);
+    img.setAttribute('src', `images/${towns[i].photo}`);
+img.setAttribute("alt",  "Photos of the towns" + towns[i].name);
+    
       card.append(h2);
       card.append(p);
       card.append(year);
@@ -55,5 +59,5 @@ img.setAttribute("alt",  `Photos of the towns ${towns.name}!`);
       card.append(annual);
       card.append(img);
       document.querySelector('div.cards').appendChild(card);
-    }
-      });
+    }}
+  });
