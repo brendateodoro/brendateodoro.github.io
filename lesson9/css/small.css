@@ -158,3 +158,13 @@ h1{
   color: #214DA6;
   font-size: 15px;
 }
+.social {
+  grid-column: 5;
+  grid-row: 5;
+  grid-gap: 10em;
+  justify-content: end;
+}
+.social img{
+  width: 50px;
+  height: 50px;
+}
