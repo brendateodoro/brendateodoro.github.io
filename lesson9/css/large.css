@@ -14,28 +14,12 @@ grid-row: 2;
   nav ul.hide{
     display: block;
   }
-  .tows {
-  
-    width: 100%;
-}
+
 .towns section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-
-  
-}
-.towns section p {
-  grid-row: 1;
-
-}
-.towns section img {
-  grid-row: 1;
-
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .towns section h2 {
-  grid-row: 1;
-  text-align: center;
-
+    grid-column: 1;  
 }
+  
 }
