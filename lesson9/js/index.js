@@ -38,13 +38,13 @@ fetch(requestURL)
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let p = document.createElement("p");
-    let year = document.createElement("year");
-    let population = document.createElement("population");
-    let annual = document.createElement("annual");
+    let year = document.createElement("p");
+    let population = document.createElement("p");
+    let annual = document.createElement("p");
     let img = document.createElement("img");
 
-    h2.innerHTML = `<span class="text"><span class="box"> ${towns[i].name}</span>`;
-    p.innerHTML =  `<span class="motto"> ${towns[i].motto}</span>`;
+    h2.innerHTML = `<br><span class="box"> ${towns[i].name}</span></br>`;
+    p.innerHTML =  `<br><span class="motto"> ${towns[i].motto}</span></br>`;
     year.innerHTML = '<br> Year Founded: ' + `${towns[i].yearFounded}</br>`;
     population.innerHTML = '<br> Population: ' + `${towns[i].currentPopulation}</br>`;
  
