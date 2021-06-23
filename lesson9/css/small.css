@@ -95,73 +95,8 @@ h1{
   width: 100%;
    height: 250px;
 }
-#contactinfo{
-  margin: 10px auto;
-  background-color: #F25244;
-   
-   width: 100%;
-  }
-  #contactmap{
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr;
-  }
-  .map{
-    grid-column: 1;
-    grid-row: 1;
-    width: 100%;
-  
-   }
-
-
- #contacttext{
-  display: grid;
-  grid-template-columns: 10fr;
-  grid-template-rows: 10fr;
-}
-.contactheading{
-  grid-column: 4;
-  grid-row: 1;
-}
-.local{
-grid-column: 5;
- grid-row: 2;
-}
-.tel{
- grid-column: 5;
- grid-row: 3;
-}
-.mail{
- grid-column: 5;
- grid-row: 4;
-}
-#local{
- grid-column: 4;
- grid-row: 2;
- width: 40px;
- height: 40px;
-}
-#tel{
- grid-column: 4;
- grid-row: 3;
- width: 40px;
- height: 40px;
-}
-#mail{
- grid-column: 4;
- grid-row: 4;
- width: 40px;
- height: 40px;
-}
-.social {
- grid-column: 5;
- grid-row: 5;
- grid-gap: 10em;
- justify-content: end;
-}
-.social img{
- width: 50px;
- height: 50px;
+.towns{
+  width: auto;
 }
  .towns section {
   display: grid;
@@ -216,7 +151,71 @@ h1{
   color: #214DA6;
   font-size: 15px;
 }
+#contactinfo{
+  margin: 10px auto;
+  background-color: #F25244;
+   
+   width: 100%;
+  }
+  #contactmap{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+  }
+  .map{
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+  
+   }
 
-.map{
-  width: 100%;
-}
+  #contacttext{
+    display: grid;
+    grid-template-columns: 10fr;
+    grid-template-rows: 10fr;
+  }
+  .contactheading{
+    grid-column: 4;
+    grid-row: 1;
+  }
+.local{
+  grid-column: 5;
+   grid-row: 2;
+ }
+ .tel{
+   grid-column: 5;
+   grid-row: 3;
+ }
+ .mail{
+   grid-column: 5;
+   grid-row: 4;
+ }
+ #local{
+   grid-column: 4;
+   grid-row: 2;
+   width: 40px;
+   height: 40px;
+ }
+ #tel{
+   grid-column: 4;
+   grid-row: 3;
+   width: 40px;
+   height: 40px;
+ }
+ #mail{
+   grid-column: 4;
+   grid-row: 4;
+   width: 40px;
+   height: 40px;
+  }
+ .social {
+   grid-column: 5;
+   grid-row: 5;
+   grid-gap: 10em;
+   justify-content: end;
+ }
+ .social img{
+   width: 50px;
+   height: 50px;
+ }
+ 

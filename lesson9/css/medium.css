@@ -24,24 +24,15 @@ header,footer{
   width: auto;
  }
  .towns{
-  display: grid; 
-  grid-template-columns: 1fr 1fr;
+  width: auto;
+ 
  }
  
-#soda{
-grid-column: 1;
-}
-#fish{
-grid-column: 1;
-}
-#preston{
- grid-column: 1;
-}
 .towns section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  
+ 
 }
 .towns section p {
   grid-column: 1;
