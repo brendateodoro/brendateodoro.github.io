@@ -14,4 +14,23 @@ grid-row: 2;
   nav ul.hide{
     display: block;
   }
+  .towns section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+  }
+  .towns section p {
+    grid-row: 1;
+  
+  }
+  .towns section img {
+    grid-row: 1;
+    
+  }
+  .towns section h2 {
+    grid-row: 1;
+    text-align: center;
+  
+  }
 }
