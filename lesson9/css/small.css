@@ -95,6 +95,23 @@ h1{
   width: 100%;
    height: 250px;
 }
+#contactinfo{
+  margin: 10px auto;
+  background-color: #F25244;
+   
+   width: 100%;
+  }
+  #contactmap{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+  }
+  .map{
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+  
+   }
 
 
  #contacttext{
@@ -199,16 +216,7 @@ h1{
   color: #214DA6;
   font-size: 15px;
 }
-.social {
-  grid-column: 5;
-  grid-row: 5;
-  grid-gap: 10em;
-  justify-content: end;
-}
-.social img{
-  width: 50px;
-  height: 50px;
-}
+
 .map{
   width: 100%;
 }
