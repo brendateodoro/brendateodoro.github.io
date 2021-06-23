@@ -167,7 +167,7 @@ grid-column: 5;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  width: 100%;
+  width: auto;
 }
 
 .towns section p {
