@@ -1,0 +1,1 @@
+const apiUrl="http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=5f872e38bc4df7e78e9ab0f612fa0eb9"
