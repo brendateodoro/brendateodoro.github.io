@@ -6,9 +6,9 @@ const apiURL=`https://api.openweathermap.org/data/2.5/weather?id=${cityid}&APPID
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    // console.log(jsObject);
     const temperature = document.querySelector('#temperature');
-    temperature.textContent = jsObject.main.temp;
+  temperature.textContent = jsObject.main.temp.toFixed(0);
     const currently = document.querySelector('#currently');
     const desc = jsObject.weather[0].description;  // note how we reference the weather array
     currently.innerHTML = `<strong>${desc.toUpperCase()}</strong>`;
@@ -16,10 +16,10 @@ fetch(apiURL)
 
 
 
-    const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
+    const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;  // note the concatenation
 
 document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
 document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-document.getElementById('icon').setAttribute('alt', desc);
+document.getElementById('icon').setAttribute('alt', desc.toUpperCase);
    
   });
