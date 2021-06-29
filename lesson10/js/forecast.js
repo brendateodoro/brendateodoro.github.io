@@ -12,32 +12,15 @@ const dayofWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 const fiveday =  jsObject.list.filter ( forecast => forecast.dt_txt.includes('12:00:00'));
 console.log(fiveday);
 fiveday.forEach( x => {
-  const d = new Date(x.dt_txt);
-  const weekDay = dayofWeek[d.getDay()];
-  const dayHigh = Math.round(x.main.temp_max);
-  const imagesrc = 'https://openweathermap.org/img/wn/' + x.weather[0].icon + '.png';
-
-  let dayContainer = document.createElement('div');
-  let weekDayContainer = document.createElement('p');
-  let forecastImg = document.createElement('img');
-  let dayHighTemp = document.createElement('p');
-
-  weekDayContainer.textContent = weekDay;
-  forecastImg.setAttribute('src', imagesrc);
-  forecastImg.setAttribute('alt', "Weather Icon");
-  dayHighTemp.textContent = dayHigh + ' °F';
-
-  dayContainer.classList.add("five-day");
-  dayContainer.appendChild(weekDayContainer);
-  dayContainer.appendChild(forecastImg);
-  dayContainer.appendChild(dayHighTemp);
-
-  document.querySelector('div.five-wrap').appendChild(weekdayContainer);
-
-  console.log(forecastImg)
-
-});
-
-
-
-});
+  let d = new Date(x.dt_txt);
+  //console.log(d);
+   document.getElementById(`dayofWeek${day+1}`).textContent = dayofWeek[d.getDay()];
+   document.getElementById(`forecast${day+1}`).textContent = x.main.temp;
+   day++
+ })
+ const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;  // note the concatenation
+ 
+ document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
+ document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
+ document.getElementById('icon').setAttribute('alt', desc.toUpperCase);
+   });
