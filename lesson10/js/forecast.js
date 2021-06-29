@@ -8,6 +8,14 @@ fetch(apiURL)
   .then((jsObject) => {
 console.log(jsObject);
 let day = 0;
-const dayOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
-const fivedayforecast =  
+const dayofWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+const fiveday =  jsObject.list.filter ( forecast => forecast.dt_txt.includes('12:00:00'));
+console.log(fiveday);
+fiveday.forEach( x=>{
+  let d = new Date(x.dt_txt);
+  // console.log(d);
+  document.getElementById(`dayofWeek${day+1}`).textContent = dayofWeek[d.getDay()];
+  document.getElementById(`forecast${day+1}`).textContent = x.main.temp;
+  day++
+})
   });
