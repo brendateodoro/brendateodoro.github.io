@@ -1,31 +1,41 @@
-const apiURL=`https://api.openweathermap.org/data/2.5/forecast?id=${cityid}&APPID=${APPID}&units=imperial`;
-
+const apiURL=`https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=e1152c63e19e94b2fda13991af004565`;
 fetch(apiURL)
   .then((response) => response.json())
-  .then((jsonObject) => {
-    
-
+  .then((jsObject) => {
   
  
    
 
 
-    let wheater = jsonObject;
+    let wheater = jsObject;
    
     let p = wheater.description;
     let high = wheater.main;
-    let chill = wheater.wind.speed;
-    let humidity = wheater.main.humidity;
-    let speed = wheater.wind.speed;
+    let chill = wind.speed;
+    let humidity = wheater.humidity;
+    let quick = wheater.speed;
 
-   
-    p.innerHTML =  `<br><span class="motto"> ${wheater[i].description}</span></br>`;
-    high.innerHTML = '<br> High: ' + `${wheater[i].main.temp_max}</br>`;
-    chill.innerHTML = '<br> Wind Chill: ' + `${wind[i].speed}</br>`;
+    let tempF = parseFloat(document.querySelector("#tempF").textContent);
+  let speed = parseFloat(document.querySelector("#speed").textContent);
  
-    humidity.innerHTML = '<br> Humidity: ' + `${main[i].humidity}</br></span>`;
-    speed.innerHTML = '<br> Wind Speed: ' + `${wind[i].speed}</br></span>`;
-    
+
+  if (tempF <= 50 && speed > 3.0){
+    let result = windChill(tempF, speed);
+    document.querySelector("#output").textContent = result.toFixed(2) + " °F";
+  } else{
+    document.querySelector("#output").textContent = "N/A";
+  }
+
+function windChill(t, s){
+  let windChill = (35.74 + .6215 * t -  35.75 * Math.pow(s , .16 ) + .4275 * t * Math.pow(s , .16));
+  return windChill;
+}
+
+   document.getElementById("currently").textContent = p;
+   document.getElementById("high").textContent = high;
+   document.getElementById("wind").textContent = chill;
+   document.getElementById("humidity").textContent = humidity;
+    document.getElementById("speed").textContent = quick;
       
     }
   );
