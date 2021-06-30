@@ -30,18 +30,4 @@ function toggleMenu(){
 
 } 
 
-  let tempF = parseFloat(document.querySelector("#tempF").textContent);
-  let speed = parseFloat(document.querySelector("#speed").textContent);
  
-
-  if (tempF <= 50 && speed > 3.0){
-    let result = windChill(tempF, speed);
-    document.querySelector("#output").textContent = result.toFixed(2) + " °F";
-  } else{
-    document.querySelector("#output").textContent = "N/A";
-  }
-
-function windChill(t, s){
-  let windChill = (35.74 + .6215 * t -  35.75 * Math.pow(s , .16 ) + .4275 * t * Math.pow(s , .16));
-  return windChill;
-}
