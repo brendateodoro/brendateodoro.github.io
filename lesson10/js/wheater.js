@@ -3,16 +3,16 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
   
- 
+ console.log(jsObject)
    
 
 
     let wheater = jsObject;
    
-    let p = wheater.description;
-    let high = wheater.main;
+    let p = wheater.wheater.description;
+    let high = wheater.main.temp_max;
     let chill = wind.speed;
-    let humidity = wheater.humidity;
+    let humidity = wheater.main.humidity;
     let quick = wheater.speed;
 
     let tempF = parseFloat(document.querySelector("#tempF").textContent);
