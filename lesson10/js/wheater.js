@@ -9,7 +9,7 @@ fetch(apiURL)
 
     let wheater = jsObject;
    
-    let p = wheater.wheater.description;
+    let p = wheater[0].description;
     let high = wheater.main.temp_max;
     let chill = wind.speed;
     let humidity = wheater.main.humidity;
