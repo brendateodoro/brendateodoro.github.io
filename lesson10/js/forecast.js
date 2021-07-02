@@ -14,13 +14,12 @@ console.log(fiveday);
 fiveday.forEach( x => {
   let d = new Date(x.dt_txt);
   //console.log(d);
-   document.getElementById(`dayofWeek${day+1}`).textContent = dayofWeek[d.getDay()];
-   document.getElementById(`forecast${day+1}`).textContent = x.main.temp;
+   document.getElementById("dayofWeek").textContent = dayofWeek[d.getDay()];
+   document.getElementById('forecast').textContent = x.main.temp;
    day++
  })
  const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;  // note the concatenation
  
  document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
- document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
- document.getElementById('icon').setAttribute('alt', desc.toUpperCase);
+ 
    });
