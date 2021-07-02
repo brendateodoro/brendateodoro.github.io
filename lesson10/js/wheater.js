@@ -9,27 +9,22 @@ fetch(apiURL)
 
     let wheater = jsObject;
    
-    let p = wheater[0].description;
+    let p = wheater.weather[0].description;
     let high = wheater.main.temp_max;
-    let chill = wind.speed;
+    let chill = wheater.wind.speed;
     let humidity = wheater.main.humidity;
-    let quick = wheater.speed;
+    let quick = wheater.wind.speed;
 
-    let tempF = parseFloat(document.querySelector("#tempF").textContent);
-  let speed = parseFloat(document.querySelector("#speed").textContent);
+    if (parseInt(high) <= 50 && parseInt(chill) > 3) {
+      const windchill = 35.74 + 0.6215 * temp - 35.75 * wind ** 0.16 + 0.4275 * temp * wind ** 0.16;
+      const chillwind = Math.round(windchill);  
+      document.querySelector('#wind').textContent = chillwind + "°F";
+  } else {
+      document.querySelector('#wind').textContent = "N/A";
+  }
  
 
-  if (tempF <= 50 && speed > 3.0){
-    let result = windChill(tempF, speed);
-    document.querySelector("#output").textContent = result.toFixed(2) + " °F";
-  } else{
-    document.querySelector("#output").textContent = "N/A";
-  }
-
-function windChill(t, s){
-  let windChill = (35.74 + .6215 * t -  35.75 * Math.pow(s , .16 ) + .4275 * t * Math.pow(s , .16));
-  return windChill;
-}
+  
 
    document.getElementById("currently").textContent = p;
    document.getElementById("high").textContent = high;

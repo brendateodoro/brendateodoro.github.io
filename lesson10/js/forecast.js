@@ -9,7 +9,7 @@ fetch(forecast)
 console.log(jsObject);
 let day = 0;
 const dayofWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
-const fiveday =  jsObject.list.filter ( forecast => forecast.dt_txt.includes('12:00:00'));
+const fiveday =  jsObject.list.filter ( forecast => forecast.dt_txt.includes('18:00:00'));
 console.log(fiveday);
 fiveday.forEach( x => {
   let d = new Date(x.dt_txt);
