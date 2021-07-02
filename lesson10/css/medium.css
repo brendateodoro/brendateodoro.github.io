@@ -25,7 +25,7 @@ header,footer{
 .page-ph{
  float: left;
 }
-.fiveday{
+#fiveday{
  margin: 10px auto;
  width: 50%;
  display: grid;

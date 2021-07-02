@@ -164,7 +164,7 @@ clear: both;
   position:relative;
   top: 10px;
   left: 10px;
-  background: radial-gradient (#F2CDA0, #F25244);
+  background:  #F25244;
   border: 1px solid #214DA6;
   padding: .5rem;
   box-shadow: 0 0 30px #F2CDA0;
@@ -176,7 +176,7 @@ section p{
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #214DA6;
 }
-.fiveday{
+#fiveday{
   margin: 10px auto;
   width: 50%;
   display: grid;
