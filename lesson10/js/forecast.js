@@ -7,19 +7,21 @@ fetch(forecast)
   .then((response) => response.json())
   .then((jsObject) => {
 console.log(jsObject);
-let day = 0;
+let day = 1;
 const dayofWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
-const fiveday =  jsObject.list.filter ( forecast => forecast.dt_txt.includes('15:00:00'));
-console.log(fiveday);
-fiveday.forEach( x => {
+const fiveDayForecast =  jsObject.list.filter ( forecast => forecast.dt_txt.includes('15:00:00'));
+console.log(fiveDayForecast);
+fiveDayForecast.forEach( x => {
   let d = new Date(x.dt_txt);
+
   //console.log(d);
-   document.getElementById("dayofWeek").textContent = dayofWeek[d.getDay()];
-   document.getElementById('forecast').textContent = x.main.temp;
+   document.getElementById(`dayofWeek${day}`) = dayofWeek[d.getDay()];
+   document.getElementById(`forecast${day}`) = x.main.temp;
    day++
- })
- const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;  // note the concatenation
+   const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;  // note the concatenation
  
- document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
+   document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
+ })
+
  
    });
