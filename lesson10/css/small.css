@@ -170,6 +170,7 @@ clear: both;
   box-shadow: 0 0 30px #F2CDA0;
   color: #F2CDA0;
   font-family: sans-serif;
+  width: auto;
 }
 
 section p{
