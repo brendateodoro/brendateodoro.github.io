@@ -127,12 +127,7 @@ clear: both;
   margin-bottom: 1rem;
 
   }
-.article{
-  background-color: #F2CDA0;
-  padding: 1rem;
-  border: 1px dashed #214DA6;
-  margin-bottom: 1rem;
-}
+
 .contact{
   background-color: #F2CDA0;
   padding: 1rem;
@@ -170,7 +165,10 @@ clear: both;
   box-shadow: 0 0 30px #F2CDA0;
   color: #F2CDA0;
   font-family: sans-serif;
-  width: auto;
+  width: 250px;
+  margin: 10px auto;
+ 
+  border: 1px solid #F2CDA0;
 }
 
 section p{
