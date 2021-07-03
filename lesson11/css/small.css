@@ -1,0 +1,218 @@
+body{
+  color: black;
+}
+#content  {
+  max-width: 960px;
+  margin: 0 auto;
+}
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+  color: black;
+}
+
+a{
+  color:#b5179e;
+  font-size: 12px;
+}
+#lastmod{
+  color: white;
+}
+header,footer {
+  text-align: center;
+  border: 1px solid #F2CDA0;
+  border-radius: 25px;
+  padding: 3rem;
+  background-color: #F25244;
+  color: #214DA6;
+  font-family: 'Roboto', sans-serif;
+  width: auto;
+
+}
+
+
+button{
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #F2CDA0;
+  float: right;
+}
+nav {
+	background-color:#F25244 ;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+  border-radius: 25px;
+  position: relative;
+  height: 100%;
+  
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: left;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+  border-top: 1px solid #F2CDA0;
+ height: 100%;
+ left: -100%;
+transition: all .5s;
+}
+
+nav a:hover, .active {
+	background-color: #F2CDA0;
+	color: #214DA6;
+  
+}
+nav ul.hide{
+  display: none;
+  
+}
+
+
+#logo{
+  position:absolute;
+  left:0;
+  top:0;
+  width: 200px;
+  height: 200px;
+  margin: 0;
+}
+
+h1{
+  color:#F2CDA0;
+  font-family: 'Roboto', sans-serif;
+}
+#view{
+  width: 100%;
+   height: 250px;
+}
+.towns{
+  width: auto;
+}
+ 
+.towns section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.towns section p {
+  grid-column: 1;
+
+}
+
+.towns section h2 {
+  grid-column: 1;
+  text-align: center;
+
+}
+
+.towns section img {
+  grid-column: 1;
+ grid-row: 3;
+}
+
+
+
+main section{
+  margin-left: 25px;
+
+}
+section img{
+  width: 100%;
+  box-shadow:0 0 50px #000;
+  
+}
+section{
+  border: 1px solid #F25244;
+  padding:15px;
+  background-color: #F2CDA0;
+}
+.box{
+  color: #F25244;
+  font-family: 'Bree Serif', serif;
+}
+
+.motto{
+  font-style: italic;
+  color: #214DA6;
+  font-size: 15px;
+}
+
+ #contactinfo{
+  margin: 10px auto;
+  background-color: #F25244;
+   
+   width: 100%;
+  }
+  #contactmap{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+  }
+  .map{
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+  
+   }
+
+  #contacttext{
+    display: grid;
+    grid-template-columns: 10fr;
+    grid-template-rows: 10fr;
+  }
+  .contactheading{
+    grid-column: 4;
+    grid-row: 1;
+  }
+.local{
+  grid-column: 5;
+   grid-row: 2;
+ }
+ .tel{
+   grid-column: 5;
+   grid-row: 3;
+ }
+ .mail{
+   grid-column: 5;
+   grid-row: 4;
+ }
+ #local{
+   grid-column: 4;
+   grid-row: 2;
+   width: 40px;
+   height: 40px;
+ }
+ #tel{
+   grid-column: 4;
+   grid-row: 3;
+   width: 40px;
+   height: 40px;
+ }
+ #mail{
+   grid-column: 4;
+   grid-row: 4;
+   width: 40px;
+   height: 40px;
+  }
+ .social {
+   grid-column: 5;
+   grid-row: 5;
+   grid-gap: 10em;
+   justify-content: end;
+ }
+ .social img{
+   width: 50px;
+   height: 50px;
+ }
+ 
