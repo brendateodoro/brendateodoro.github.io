@@ -88,10 +88,7 @@ nav ul.hide{
 
 
 #logo{
-  position:absolute;
-  left:0;
-  top:0;
-
+  position:relative;
   margin: 0;
 }
 
