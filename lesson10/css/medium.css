@@ -26,11 +26,16 @@ header,footer{
  float: left;
 }
 .wheatersummary{
-width: auto;
-height: max-content;
-position: inherit;
+  position:absolute;
+  top: 10px;
+  left: 10px;
+  background: radial-gradient (#F2CDA0, #F25244);
+  border: 1px solid #214DA6;
+  padding: .5rem;
+  box-shadow: 0 0 30px #F2CDA0;
+  color: #F2CDA0;
+  font-family: sans-serif;
 }
-
 
 #fiveday{
  margin: 10px auto;

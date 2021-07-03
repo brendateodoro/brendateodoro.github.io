@@ -25,10 +25,7 @@ grid-row: 2;
 }
 
 .towns section img {
-  max-width: 100%;
-  align-self: end;
-  justify-self: center;
-  grid-row: auto;
+grid-row: auto;
 }
 .towns section p{
   grid-row: auto;

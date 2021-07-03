@@ -74,7 +74,12 @@
   </div>
   
   <div id="contactmap">
-    <img class="map" src="images/mapa1.png" alt="image of map">
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/map-large.jpeg">
+      <source media="(min-width:500px)" srcset="images/map-medium.jpeg">
+      <source media="(min-width: 300px)" srcset="images/map-small.jpeg">
+      <img id="view" src="images/mapa1.png" alt="image of a view">
+    </picture>
   </div>
 </div>
 <footer>
