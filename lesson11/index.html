@@ -45,7 +45,13 @@
   
 </nav>
 <h1>Home Page</h1>
-<img id="view" src="images/pexels-photo-414171.jpeg" alt="image of a view.">
+
+<picture>
+  <source media="(min-width: 900px)" srcset="images/hero-index-large.jpg">
+  <source media="(min-width:500px)" srcset="images/hero-index-medium.jpg">
+  <source media="(min-width: 200px)" srcset="images/hero-index-small.jpg">
+  <img id="view" src="images/pexels-photo-414171.jpeg" alt="image of a view.">
+</picture>
 
 <main>
   <div class="towns">
