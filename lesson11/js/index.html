@@ -1,64 +1,99 @@
-let buttons = document.querySelectorAll('button');
-buttons.forEach(button => {
-  button.addEventListener('click', function(){
-    buttons.forEach (btn=>btn.classList.remove("active"));
-    this.classList.add('active');
-  })
-})
-function toggleMenu(){
+<!DOCTYPE html >
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My home page for assignment</title>
+    <meta
+    name="description"
+    content="~This page will serve as an assignment which you serve as a galley."/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <script defer src="js/index.js"></script>
+  </head>
+  <body>
+  <header>
+    <h2>The Midwest</h2>
+    <h3>Everything you need, you can find in The Midwest!</h3>
   
-  document.getElementById("primaryNav").classList.toggle("hide");
- }
- const imagesToLoad = document.querySelectorAll('img[data-src]');
-
-
-const imgOptions = {
-  rootMargin: "0px 0px 50px 0px",
-  threshold: 1
-};
-
-const loadImages = (image) => {
-  image.setAttribute('src', image.getAttribute('data-src'));
-  image.onload = () => {
-    image.removeAttribute('data-src');
-  };
-};
-
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-   //   console.table(jsonObject);  // temporary checking for valid response and data parsing
-   const towns = jsonObject['towns'];
-   
-   for (let i = 0; i < towns.length; i++ ) {
-    if (towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven" || towns[i].name == "Preston") {
-    let card = document.createElement('section');
-    let h2 = document.createElement('h2');
-    let p = document.createElement("p");
-    let year = document.createElement("p");
-    let population = document.createElement("p");
-    let annual = document.createElement("p");
-    let img = document.createElement("img");
-
-    h2.innerHTML = `<br><span class="box"> ${towns[i].name}</span></br>`;
-    p.innerHTML =  `<br><span class="motto"> ${towns[i].motto}</span></br>`;
-    year.innerHTML = '<br> Year Founded: ' + `${towns[i].yearFounded}</br>`;
-    population.innerHTML = '<br> Population: ' + `${towns[i].currentPopulation}</br>`;
+   <img id="logo" src="images/midwest-logo.png" alt="image of logo">
  
-    annual.innerHTML = '<br> Annual Rain Fall: ' + `${towns[i].averageRainfall}</br></span>`;
+
+   
+  <button onclick="toggleMenu()">&#9776;</button>
+</header>
+<nav>
+  <ul id="primaryNav" class="hide">
+ 
+    <li><a href="index.html" class="active" >Home</a></li>
+    <li><a href="preston.html" >Preston</a></li>
+    <li><a href="soda.html">Soda Springs</a></li>
+    <li><a href="fish.html">Fish Haven</a></li>
+    <li><a href="storm.html">Storm Center</a></li>
+    <li><a href="gallery.html" >Gallery</a></li>
+  </ul>
   
-    img.setAttribute('src', `images/${towns[i].photo}`);
-img.setAttribute("alt",  "Photos of the towns" + towns[i].name);
+</nav>
+<h1>Home Page</h1>
+<img id="view" src="images/pexels-photo-414171.jpeg" alt="image of a view.">
+
+<main>
+  <div class="towns">
+  <div class="cards">
+
+</div>
+</div>
+</main>
+<div id="contactinfo">
+  <div id="contacttext">
+    <h2 class="contactheading">Contact Information</h2>
     
-      card.append(h2);
-      card.append(p);
-      card.append(year);
-      card.append(population);
-      card.append(annual);
-      card.append(img);
-      document.querySelector('div.cards').appendChild(card);
-    }}
-  });
+    <p class="local">Av. Mato Grosso, 1115 Bairro Jundiaí, Anápolis - GO Brazil</p><br>
+    <p class="tel">+55(64) 3317-1420</p><br>
+    <p class="mail">acentrooeste1@hotmail.com</p> 
+
+   
+  <img id="local" src="images/iconmonstr-location-1-240.png" alt="icon for location">
+   
+  <img id="tel" src="images/iconmonstr-phone-1-240.png" alt="icon for telephone">
+  
+  <img id="mail" src="images/iconmonstr-email-2-240.png" alt="icon for email" >
+
+
+<div class="social">
+    <a href="https://www.instagram.com/acentrooeste1" target="_blank"
+      ><img src="images/1_Instagram_colored_svg_1-512.png" alt="icon for instagram" ></a>
+    <a href="https://www.facebook.com/acentrooeste1" target="_blank"><img src="images/1365px-Facebook_f_logo_(2019).png" alt="logo for facebook" ></a>
+    <a href="https://vm.tiktok.com/ZS4KDXt7/" target="_blank"><img src="images/fad8233679eb82633a26003deeb2ea0b.png" alt="logo for TikTok" ></a>
+    </div>
+  </div>
+  
+  <div id="contactmap">
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/map-large.jpeg">
+      <source media="(min-width:500px)" srcset="images/map-medium.jpeg">
+      <source media="(min-width: 300px)" srcset="images/map-small.jpeg">
+      <img id="view" src="images/mapa1.png" alt="image of a view">
+    </picture>
+  </div>
+</div>
+<footer>
+  &copy;  
+
+   The Wheater Site | Attributions | Brenda Cristiele de Medeiros Teodoro 
+
+  <p><a href="home-wireframes.html"></a>See Wireframes here!</p>
+
+   </footer>
+
+  
+
+
+  </body>
+
+  </html>
