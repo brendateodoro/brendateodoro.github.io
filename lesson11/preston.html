@@ -1,0 +1,147 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Preston 10</title>
+  <meta name="description" content="JSON data source activity"/>
+    <link rel="stylesheet" href="css/small.css"/>
+    <link rel="stylesheet" href="css/medium.css"/>
+    <link rel="stylesheet" href="css/large.css"/>
+ 
+  </head>
+
+<body>
+  <div id="pancake">
+    Saturday = Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion.
+  </div>
+  <header>
+    <h2>The Midwest</h2>
+    <h3>Everything you need, you can find in The Midwest!</h3>
+  
+   <img id="logo" src="images/midwest-logo.png" alt="image of logo">
+ 
+
+   
+  <button onclick="toggleMenu()">&#9776;</button>
+</header>
+<nav>
+  <ul id="primaryNav" class="hide">
+ 
+    <li><a href="index.html" >Home</a></li>
+    <li><a href="preston.html" class="active">Preston</a></li>
+    <li><a href="soda.html">Soda Springs</a></li>
+    <li><a href="fish.html">Fish Haven</a></li>
+    <li><a href="storm.html">Storm Center</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+  
+</nav>
+
+<main>
+<h2>
+  Preston Idaho
+ </h2>
+  <div class="pagediv">
+    <div class="page-ph">
+      <picture>
+        <source media="(min-width: 900px)" srcset="images/image-large.jpg">
+        <source media="(min-width:500px)" srcset="images/image-medium.jpg">
+        <source media="(min-width: 300px)" srcset="images/image-small.jpg">
+        <img id="view" src="images/wdd230_image_franklinOriginal.jpeg" alt="image of a view">
+      </picture>
+    </div>
+ <section class="wheatersummary">
+  <h3>Wheater Summary</h3>
+  <p>Currently: <span id="currently"> </span> </p>
+<p>High: <span id="high"></span> °F </p> 
+<p>Wind Chill: <span id="wind"> </span> °F</p>
+  <p>Humidity: <span id="humidity"> </span> % </p>
+  <p>Wind Speed: <span id="speed"></span> mph </p> 
+ </section>
+</div>
+<h2>Five Day Forecast</h2> 
+<div id="fiveday">
+  <div class="monday">
+    <p> <span id="dayofweek1"></span> : <span id="forecast1"></span>&deg; F </p>
+<p> <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon1"></p>
+</div>
+<div class="tuesday">
+<p> <span id="dayofweek2"></span> : <span id="forecast2"></span>&deg; F </p>
+
+<p> <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon2"></p>
+</div>
+<div class="wednesday">
+<p> <span id="dayofweek3"></span> : <span id="forecast3"></span>&deg; F </p>
+
+<p> <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon3"></p>
+</div>
+<div class="thursday">
+<p> <span id="dayofweek4"></span> : <span id="forecast4"></span>&deg; F </p>
+
+<p> <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon4"></p>
+</div>
+<div class="friday">
+<p> <span id="dayofweek5"></span> : <span id="forecast5"></span>&deg; F </p>
+
+<p> <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon5"></p>
+
+</div>
+</div>
+   
+      
+    <div class="article">
+    <h2>How the Impact of Environment Affects the Society</h2>
+   <img id="envi" src="images/pexels-photo-459728.jpeg" alt="image of factories" >
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, enim nihil? Iusto accusamus, voluptates autem ipsam accusantium adipisci commodi, voluptatum illum eos esse aspernatur officiis voluptas, iure aperiam possimus velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aliquid facere debitis enim, culpa nam dolorum soluta nobis numquam possimus eaque molestias quibusdam id asperiores ratione harum maxime corporis rem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur labore optio perspiciatis velit unde adipisci, quos maxime quis, vel reprehenderit, officiis natus ipsa impedit blanditiis mollitia aut soluta repellendus enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime hic numquam, enim deserunt reprehenderit repellendus perspiciatis sit magni excepturi cumque quisquam iusto neque optio, harum dolore eligendi voluptas explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio dolorem quia recusandae, reiciendis possimus quibusdam quo, vel minus earum perspiciatis repellat suscipit optio eius mollitia. Vitae illo distinctio placeat?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, enim nihil? Iusto accusamus, voluptates autem ipsam accusantium adipisci commodi, voluptatum illum eos esse aspernatur officiis voluptas, iure aperiam possimus velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aliquid facere debitis enim, culpa nam dolorum soluta nobis numquam possimus eaque molestias quibusdam id asperiores ratione harum maxime corporis rem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur labore optio perspiciatis velit unde adipisci, quos maxime quis, vel reprehenderit, officiis natus ipsa impedit blanditiis mollitia aut soluta repellendus enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime hic numquam, enim deserunt reprehenderit repellendus perspiciatis sit magni excepturi cumque quisquam iusto neque optio, harum dolore eligendi voluptas explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio dolorem quia recusandae, reiciendis possimus quibusdam quo, vel minus earum perspiciatis repellat suscipit optio eius mollitia. Vitae illo distinctio placeat?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, enim nihil? Iusto accusamus, voluptates autem ipsam accusantium adipisci commodi, voluptatum illum eos esse aspernatur officiis voluptas, iure aperiam possimus velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, aliquid facere debitis enim, culpa nam dolorum soluta nobis numquam possimus eaque molestias quibusdam id asperiores ratione harum maxime corporis rem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur labore optio perspiciatis velit unde adipisci, quos maxime quis, vel reprehenderit, officiis natus ipsa impedit blanditiis mollitia aut soluta repellendus enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime hic numquam, enim deserunt reprehenderit repellendus perspiciatis sit magni excepturi cumque quisquam iusto neque optio, harum dolore eligendi voluptas explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio dolorem quia recusandae, reiciendis possimus quibusdam quo, vel minus earum perspiciatis repellat suscipit optio eius mollitia. Vitae illo distinctio placeat?</p>
+  </div>
+  </main>
+
+<div id="contactinfo">
+  <div id="contacttext">
+    <h2 class="contactheading">Contact Information</h2>
+    
+    <p class="local">Av. Mato Grosso, 1115 Bairro Jundiaí, Anápolis - GO Brazil</p><br>
+    <p class="tel">+55(64) 3317-1420</p><br>
+    <p class="mail">acentrooeste1@hotmail.com</p> 
+
+   
+  <img id="local" src="images/iconmonstr-location-1-240.png" alt="icon for location">
+   
+  <img id="tel" src="images/iconmonstr-phone-1-240.png" alt="icon for telephone">
+  
+  <img id="mail" src="images/iconmonstr-email-2-240.png" alt="icon for email" >
+
+
+<div class="social">
+    <a href="https://www.instagram.com/acentrooeste1" target="_blank"
+      ><img src="images/1_Instagram_colored_svg_1-512.png" alt="icon for instagram" ></a>
+    <a href="https://www.facebook.com/acentrooeste1" target="_blank"><img src="images/1365px-Facebook_f_logo_(2019).png" alt="logo for facebook" ></a>
+    <a href="https://vm.tiktok.com/ZS4KDXt7/" target="_blank"><img src="images/fad8233679eb82633a26003deeb2ea0b.png" alt="logo for TikTok" ></a>
+    </div>
+  </div>
+  
+  <div id="contactmap">
+    <div class="page-ph">
+      <picture>
+        <source media="(min-width: 900px)" srcset="images/map-large.jpeg">
+        <source media="(min-width:500px)" srcset="images/map-medium.jpeg">
+        <source media="(min-width: 300px)" srcset="images/map-small.jpeg">
+        <img id="view" src="images/mapa1.png" alt="image of a view">
+      </picture>
+  </div>
+</div>
+<footer>
+  &copy; <span id="theyear"></span> The Wheater Site | Attributions | Brenda Cristiele de Medeiros Teodoro 
+  <p><span id="date"></span></p>
+  <script defer src="js/forecast.js"></script>
+  <script defer src="js/wheater.js"></script>
+  <script defer src="js/preston.js"></script>  
+</footer>
+
+</body>
+</html>
+  

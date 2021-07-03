@@ -1,0 +1,72 @@
+/* Tablet Views */
+@media only screen and (min-width: 32.5em) {
+  button {
+    display: none;
+  float: right;
+  }
+ 
+  
+  nav ul{margin: 2%;}
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    border: none;
+    border-right: 1px solid #F2CDA0;
+    padding: .8rem 1rem;
+  }
+  nav ul.hide{
+    display: block;
+  }
+ 
+header,footer{
+  border-radius: 25px;
+  width: auto;
+ }
+
+
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+#one{
+  grid-column: 1;
+  grid-row: 1;
+}
+#two{
+  grid-column: 1;
+  grid-row: 2;
+}
+#three{
+  grid-column: 1;
+  grid-row: 3;
+}
+#four{
+  grid-column: 1;
+  grid-row: 4;
+}
+#five{
+  grid-column: 2;
+  grid-row: 1;
+}
+#six{
+  grid-column: 2;
+  grid-row: 2;
+}
+#seven{
+  grid-column: 2;
+  grid-row: 3;
+}
+#eight{
+  grid-column: 2;
+  grid-row: 4;
+}
+#nine{
+  grid-column: 2;
+  grid-row: 5;
+}
+
+}

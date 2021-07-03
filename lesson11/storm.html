@@ -1,0 +1,115 @@
+<!DOCTYPE html >
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My storm center page for assignment</title>
+    <meta
+    name="description"
+    content="~This page will serve as an assignment which you serve as a galley."/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <header>
+    <h2>The Midwest</h2>
+    <h3>Everything you need, you can find in The Midwest!</h3>
+  
+   <img id="logo" src="images/midwest-logo.png" alt="image of logo">
+ 
+
+   
+  <button onclick="toggleMenu()">&#9776;</button>
+</header>
+<nav>
+  <ul id="primaryNav" class="hide">
+ 
+    <li><a href="index.html" >Home</a></li>
+    <li><a href="preston.html" >Preston</a></li>
+    <li><a href="soda.html">Soda Springs</a></li>
+    <li><a href="fish.html">Fish Haven</a></li>
+    <li><a href="storm.html" class="active">Storm Center</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+  
+</nav>
+
+ 
+      <h1>Storm Center</h1>
+        
+      <form method="get" action="thanks.html">
+         <fieldset>
+           <legend>Storm Center Applicant Information</legend>
+           <label class="top">Full Name*<input type="text" name="fname" required pattern="^.* .*$"></label>
+           <label class="top">Email*<input type="email" name="email" placeholder="someone@email.com"></label>
+           <label class="top">Phone<input type="tel" name="phone"></label>
+           <label class="top">Zip Code*<input type="number" name="zip" required></label>
+           <label class="top">Storm Date <input type="date" name=completeData></label>
+           <label class="top" for="storm-type-choice">Storm Type
+          </label>
+            <input list="storm-type" id="storm-type-choice" name="storm-type-choice" />
+            <datalist id="storm-type">
+              <option value="Flash Flood">
+              <option value="Hail">
+          <option value="Hurricane">
+              <option value="Thunderstorm">
+          <option value="Tornado">
+            </datalist>
+          
+            <label class="top" for="rating">Storm Range: &nbsp;&nbsp;&nbsp;          </label>
+              <input type="range" id="rating"  min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+              <span id="ratingvalue"></span>
+  
+        
+            <datalist id="tickmarks">
+              <option value="0">
+              <option value="1">
+              <option value="2">
+              <option value="3">
+              <option value="4">
+              <option value="5">
+              <option value="6">
+              <option value="7">
+              <option value="8">
+              <option value="9">
+              <option value="10">
+            </datalist>
+<label class="top">Storm Region
+  <select name="region">
+    <option selected disabled>Select Region... &#9662;</option>
+    <option value="preston">Preston</option>
+    <option value="soda">Soda Springs</option>
+<option value="fish">Fish Haven</option>
+    
+  </select>
+</label>
+<div>Danger Level</div>
+<label class="sbs"><input type="radio" name="audience" value="yes">Yes</label>
+ <label class="sbs"><input type="radio" name="audience" value="maybe">Maybe</label>
+ <label class="sbs"><input type="radio" name="audience" value="no">No</label>
+ <label class="top" for="comment">Add any comments:</label>
+
+ <textarea id="comment" name="w3review" rows="4" cols="50">
+ 
+ </textarea>
+<input type="submit" value="Send My Storm Center Application" class="submitBtn">
+</fieldset>
+</form>     
+    <footer>
+      &copy;  <span id="diffInDays"></span>
+   
+       The Wheater Site | Attributions | Brenda Cristiele de Medeiros Teodoro 
+      <p><span id="date"></span></p>
+       </footer>
+    <script src="js/stormcenter.js">
+      
+    
+    </script>
+      </body>
+
+      </html>
