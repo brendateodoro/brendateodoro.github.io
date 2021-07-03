@@ -6,7 +6,7 @@
     <title>My home page for assignment</title>
     <meta
     name="description"
-    content="~This page will serve as an assignment which you serve as a galley."/>
+    content="~This page will serve as an assignment which you serve as a home page."/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -21,8 +21,13 @@
     <h2>The Midwest</h2>
     <h3>Everything you need, you can find in The Midwest!</h3>
   
-   <img id="logo" src="images/midwest-logo.png" alt="image of logo">
- 
+  
+   <picture>
+    <source media="(min-width: 900px)" srcset="images/midwest-logo-large-new.png">
+    <source media="(min-width:500px)" srcset="images/midwest-logo-medium-new.png">
+    <source media="(min-width: 300px)" srcset="images/midwest-logo-small-new.png">
+    <img id="logo" src="images/midwest-logo.png" alt="image of logo">
+  </picture>
 
    
   <button onclick="toggleMenu()">&#9776;</button>
@@ -30,7 +35,7 @@
 <nav>
   <ul id="primaryNav" class="hide">
  
-    <li><a href="index.html" class="active" >Home</a></li>
+    <li><a href="/index.html" class="active" >Home</a></li>
     <li><a href="preston.html" >Preston</a></li>
     <li><a href="soda.html">Soda Springs</a></li>
     <li><a href="fish.html">Fish Haven</a></li>

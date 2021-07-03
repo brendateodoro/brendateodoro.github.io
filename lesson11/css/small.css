@@ -79,19 +79,12 @@ nav ul.hide{
 }
 
 
-#logo{
-  position:absolute;
-  left:0;
-  top:0;
-  width: 200px;
-  height: 200px;
-  margin: 0;
-}
 
 h1{
   color:#F2CDA0;
   font-family: 'Roboto', sans-serif;
 }
+
 #view{
   width: 100%;
    height: 250px;
