@@ -157,10 +157,10 @@ section{
     grid-template-columns: 2fr;
     grid-template-rows: 1fr;
   }
-  .map{
+  #map{
     grid-column: 1;
     grid-row: 1;
-    width: 100%;
+  
   
    }
 
