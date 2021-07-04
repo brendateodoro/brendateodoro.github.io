@@ -29,3 +29,26 @@ function toggleMenu(){
     document.getElementById("pancake").style.display="none";
 
 } 
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+   //   console.table(jsonObject);  // temporary checking for valid response and data parsing
+   const towns = jsonObject['towns'];
+   
+   for (let i = 0; i < towns.length; i++ ) {
+    if (towns[i].name ==  towns[i].name == "Preston") {
+    let card = document.createElement('section');
+    let h2 = document.createElement('h2');
+   
+
+    h2.innerHTML = `<br><span class="box"> ${towns[i].events}</span></br>`;
+
+    
+      card.append(h2);
+
+      document.querySelector('div.cards').appendChild(card);
+    }}
+  });
