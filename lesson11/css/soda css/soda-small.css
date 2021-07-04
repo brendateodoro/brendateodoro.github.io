@@ -85,7 +85,21 @@ nav ul.hide{
   display: none;
   
 }
-
+#events{
+  position:relative;
+  top: 10px;
+  left: 10px;
+  background:  #F25244;
+  border: 1px solid #214DA6;
+  padding: .5rem;
+  box-shadow: 0 0 30px #F2CDA0;
+  color: #F2CDA0;
+  font-family: sans-serif;
+  width: 250px;
+  margin: 10px auto;
+ 
+  border: 1px solid #F2CDA0;
+}
 
 #logo{
   position:relative;
