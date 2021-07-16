@@ -1,0 +1,54 @@
+{
+  "businesses" : [
+    {
+      "name": "A Centro Oeste",
+      "logo": "images/logo-acentrooeste.jpg",
+      "telephone": "62 3317-1420",
+      "address": "Av. Mato Grosso, 1115 Bairro Jundiaí",
+      "site": "https://acentrooeste.negocio.site/"
+
+    },
+    {
+"name": "Porto Seco Centro Oeste",
+"logo":"images/logo-portoseco.png",
+"telephone": "62 3310-6100",
+"address": "Viela Vp-5E, Qd. 09 - Lt, 07 - Distrito Agroindustrial de Anápolis",
+"site": "https://portoseco.com.br/"
+ },
+    {
+    "name": "Zoo Flora",
+    "logo": "images/logo-zooflora.jpg",
+    "telephone": "62 3314-1044",
+    "address": "R. 23, 820 - Lourdes",
+    "site": "https://www.zooflora.com.br/"
+     },
+    {
+      "name": "Drogasil",
+      "logo": "images/logo-drogasil.png",
+      "telephone": "62 3313-7654",
+      "address": "Av. Mato Grosso, 1070",
+      "site": "https://www.drogasil.com.br/"
+       },
+    {
+       "name": "Brasil Park Shopping",
+      "logo": "images/logo-brasilpark.jpeg",
+      "telephone": "62 3320-9087",
+      "address": "Av. Brasil Norte, 505 Centro",
+      "site": "https://brasilparkshopping.com.br/"
+       },
+    {
+       "name": "AnaShopping",
+      "logo": "images/logo-anashopping.jpeg",
+      "telephone": "62 3345-9065",
+      "address": "Av. Universitária, 2221",
+      "site": "http://www.anashopping.com.br/"
+       },
+    {
+       "name": "GeoLab",
+      "logo": "images/logo-geolab.jpg",
+      "telephone": "62 3324-8765",
+      "address": "Vila Principal Daia",
+      "site": "https://geolab.com.br/"
+     }
+  ]
+}
