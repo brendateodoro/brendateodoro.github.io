@@ -17,29 +17,65 @@
     <script defer src="js/home.js"></script>
   </head>
   <body>
-  <header>
+<header>
     <h2>Anápolis Chamber of Commerce</h2>
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/logo-chamber-red.png">
+      <source media="(min-width:500px)" srcset="images/logo-chamber-red.png">
+      <source media="(min-width: 200px)" srcset="images/logo-chamber-red.png">
+      <img id="logo" src="images/logo-chamber-red.png" alt="image of logo">
+    </picture>
+    <button onclick="toggleMenu()">&#9776;</button>
+  </header>
+<nav>
+  <ul id="primaryNav" class="hide">
+ 
+    <li><a href="home.html" class="active" >Home</a></li>
+    <li><a href="city.html" >City</a></li>
+    <li><a href="join.html">Join</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
   
+</nav>
+
+<h1>Home Page</h1>
+
  <!-- Slideshow container -->
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="img1.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/800px-Parque_Ambiental_Ipiranga_9-large.jpg">
+      <source media="(min-width:500px)" srcset="images/800px-Parque_Ambiental_Ipiranga_9.jpeg">
+      <source media="(min-width: 300px)" srcset="images/800px-Parque_Ambiental_Ipiranga_9-small.jpg">
+      <img id="map" src="images/800px-Parque_Ambiental_Ipiranga_9.jpeg" alt="image of Ipiranga Park">
+    </picture>
+    <div class="text">Ipiranga Park</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="img2.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/DAIA-2.jpeg">
+      <source media="(min-width:500px)" srcset="images/DAIA-2-medium.jpg">
+      <source media="(min-width: 300px)" srcset="images/DAIA-2-small.jpg">
+      <img id="map" src="images/DAIA-2.jpeg" alt="image of DAIA">
+    </picture>
+    <div class="text">DAIA</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="img3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/avbrasil-large.jpg">
+      <source media="(min-width:500px)" srcset="images/avbrasil-medium.jpg">
+      <source media="(min-width: 300px)" srcset="images/avbrasil-small.jpg">
+      <img id="map" src="images/avbrasil.jpeg" alt="image of Avenida Brasil">
+    </picture>
+    <div class="text">Brasil Avenue</div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -54,33 +90,101 @@
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
+<div class="purpose">
+  <h2>Our Purpose</h2>
+  <p>Our purpose is to strenghen businesses and all the community with principles of union, hope and faith by providing quality information, defending people's rights and contributing to the city's economy.</p>
+</div>
 
    
-  <button onclick="toggleMenu()">&#9776;</button>
-</header>
-<nav>
-  <ul id="primaryNav" class="hide">
- 
-    <li><a href="home.html" class="active" >Home</a></li>
-    <li><a href="city.html" >City</a></li>
-    <li><a href="join.html">Join</a></li>
-    <li><a href="directory.html">Directory</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  
-</nav>
-<h1>Home Page</h1>
 
-<picture>
-  <source media="(min-width: 900px)" srcset="images/hero-index-large.jpg">
-  <source media="(min-width:500px)" srcset="images/hero-index-medium.jpg">
-  <source media="(min-width: 200px)" srcset="images/hero-index-small.jpg">
-  <img id="view" src="images/pexels-photo-414171.jpeg" alt="image of a view.">
-</picture>
+
 
 <main>
-  <div class="towns">
-  <div class="cards">
+  <div class="ads">
+  <div class="ad1">
+    <h2>Are you building or renovating?</h2>
+    <img src="images/logo-acentrooeste-color.png">
+    <button>Learn more</button>
+  </div>
+  <div class="ad2">
+    <h2>The best medicins</h2>
+    <img src="images/logo-drogasil.png">
+    <button>Buy now</button>
+  </div>
+  <div class="ad3">
+    <h2>We know what your cattle needs!</h2>
+    <img src="images/logo-zooflora-removebg-preview.png">
+<button>Visit our site</button>
+  </div>
+</div>
+<h2 id="join" >Join the chamber leading to a membership application!</h2>
+<div class="join">
+  
+ <div class="nonprofit">
+  <h3>Nonprofit</h3>
+  <img id="nonprofit" src="images/community-2252352-1880644.png" alt="icon for nonprofit membership">
+</div>
+<div class="bronze">
+  <h3>Bronze</h3>
+  <img id="bronze" src="images/179250.png" alt="icon for bronze membership">
+</div>
+<div class="silver">
+  <h3>Silver</h3>
+  <img id="silver" src="images/179251.png" alt="icon for silver membership">
+</div>
+<div class="gold">
+  <h3>Gold</h3>
+  <img id="gold" src="images/download-removebg-preview.png" alt="icon for golf membership">
+</div>
+</div>
+<button>Know more</button>
+<section>
+  
+  <div id="events">
+    <h2>Events</h2>
+    <p> August 1: Celebration of Labor Day!
+    </p>
+      <p> 
+        September 15-16: Help who needs
+        </p>
+    <p>September 23: Launch of our first app</p>
+    <p>December 12: Celebration of the Bests of the Year</p>
+  </div>
+ 
+</section>
+<section class="wheatersummary">
+  <h3>Weather Summary</h3>
+  <p>Currently: <span id="currently"> </span> </p>
+<p>High: <span id="high"></span> °C </p> 
+
+  <p>Humidity: <span id="humidity"> </span> % </p>
+ 
+ </section>
+ <h2 id="fiveh" >Five Day Forecast</h2> 
+<div id="fiveday">
+  <div class="monday">
+    <p> <span id="dayofweek1"></span> : <span id="forecast1"></span>&deg; F </p>
+<p> <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon1"></p>
+</div>
+<div class="tuesday">
+<p> <span id="dayofweek2"></span> : <span id="forecast2"></span>&deg; F </p>
+
+<p> <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon2"></p>
+</div>
+<div class="wednesday">
+<p> <span id="dayofweek3"></span> : <span id="forecast3"></span>&deg; F </p>
+
+<p> <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon3"></p>
+</div>
+<div class="thursday">
+<p> <span id="dayofweek4"></span> : <span id="forecast4"></span>&deg; F </p>
+
+<p> <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon4"></p>
+</div>
+<div class="friday">
+<p> <span id="dayofweek5"></span> : <span id="forecast5"></span>&deg; F </p>
+
+<p> <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon5"></p>
 
 </div>
 </div>
@@ -116,7 +220,7 @@
 
    The Anápolis Chamber of Commerce | Attributions | Brenda Cristiele de Medeiros Teodoro 
 
- 
+ <p><a href="attributions.html"></a>Attributions Page</p>
 
    </footer>
 
