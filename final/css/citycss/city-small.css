@@ -11,6 +11,13 @@ p {
   font-size: 12px;
   
 }
+#chamber{
+  text-align: center;
+
+  color: #dbdbdb;
+  font-family: 'Roboto', sans-serif;
+  width: auto;
+}
 h1, h2{
   font-family: 'Roboto', sans-serif;
   color: #002087;
