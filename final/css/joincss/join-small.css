@@ -90,9 +90,16 @@ nav ul.hide{
   display: none;
   
 }
-* {box-sizing:border-box}
-
-
+main{
+  display: grid;
+  grid-template-columns: 2;
+}
+section{
+  grid-column: 1;
+}
+.container {
+  grid-column: 2;
+}
 #contactinfo{
   margin: 10px auto;
   background-color: #dbdbdb;
