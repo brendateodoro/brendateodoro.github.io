@@ -14,6 +14,28 @@ grid-row: 2;
   nav ul.hide{
     display: block;
   }
+  .ads{
+
+    
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 1fr;
+   
+    height: min-content;
+    grid-gap: 0.5rem;
+  }
+  .ad1{
+ grid-row: 1;
+    grid-column: 1;
+  }
+  .ad2{
+   grid-row: 1;
+    grid-column: 2;
+  }
+  .ad3{
+  grid-row: 1;
+    grid-column: 3;
+  }
   #first{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

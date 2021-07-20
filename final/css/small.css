@@ -181,8 +181,8 @@ nav ul.hide{
   margin: 10px auto;
   
   display: grid;
-  grid-template-columns: 3fr;
-  grid-template-rows: 2fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
   font-family: 'Roboto', sans-serif;
   height: min-content;
   grid-gap: 0.5rem;
@@ -191,19 +191,19 @@ nav ul.hide{
   border: 1px solid #670300;
   padding: .5rem;
   color: #002087;
-  grid-column: 1;
+  grid-row: 1;
 }
 .ad2{
   border: 1px solid #670300;
   padding: .5rem;
   color: #002087;
-  grid-column: 2;
+  grid-row: 2;
 }
 .ad3{
   border: 1px solid #670300;
   padding: .5rem;
   color: #002087;
-  grid-column: 3;
+  grid-row: 3;
 }
 #join{
   font-family: 'Roboto', sans-serif;
