@@ -1,0 +1,168 @@
+<!DOCTYPE html >
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My city page</title>
+    <meta
+    name="description"
+    content="~This page will serve as an assignment which you serve as a galley."/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/citycss/city-small.css">
+    <link rel="stylesheet" href="css/citycss/city-medium.css">
+    <link rel="stylesheet" href="css/citycss/city-large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <script defer src="js/city.js"></script>
+  </head>
+  <body>
+<header>
+  <h2>Anápolis Chamber of Commerce</h2>
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/logo-chamber-red.png">
+      <source media="(min-width:500px)" srcset="images/logo-chamber-red.png">
+      <source media="(min-width: 200px)" srcset="images/logo-chamber-red.png">
+      <img id="logo" src="images/logo-chamber-red.png" alt="image of logo">
+    </picture>
+    <button onclick="toggleMenu()">&#9776;</button>
+  </header>
+<nav>
+  <ul id="primaryNav" class="hide">
+ 
+    <li><a href="home.html" >Home</a></li>
+    <li><a href="city.html" class="active">City</a></li>
+    <li><a href="join.html">Join</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  
+</nav>
+
+<h1>Anápolis</h1>
+
+ <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/anapolis-large.jpg">
+      <source media="(min-width:500px)" srcset="images/anapolis-medium.jpg">
+      <source media="(min-width: 300px)" srcset="images/anapolis.jpeg">
+      <img id="map" src="images/anapolis.jpeg" alt="image of Old Anápolis">
+    </picture>
+    <div class="text">Old Anápolis</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/Anápolis-Antiga-large.jpg">
+      <source media="(min-width:500px)" srcset="images/Anápolis-Antiga.jpeg">
+      <source media="(min-width: 300px)" srcset="images/Anápolis-Antiga-small.jpg">
+      <img id="map" src="images/Anápolis-Antiga.jpeg" alt="image of train">
+    </picture>
+    <div class="text">Old Train</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/old-house-large.jpg">
+      <source media="(min-width:500px)" srcset="images/old-house-medium.jpg">
+      <source media="(min-width: 300px)" srcset="images/old-house-small.jpg">
+      <img id="map" src="images/old-house.jpeg" alt="image of old house">
+    </picture>
+    <div class="text">Old House</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<h2>About Anápolis</h2>
+<p>Anápolis is a Brazilian municipality of the State of Goiás. It is located between two capitals, the federal capital Brasília and state capital Goiânia. It is the third most populous city in the state, with 391,772 inhabitants according to an estimate by the Brazilian Institute of Geographic and Statistics in 2020. It is an important industrial and logistics center in the Brazilian Central-West. Its GDP is R$ 10 billion, approximately US$4.4 billion, which makes it the second largest in the state.<br> The city became an industrial power after the implementation of its Industrial District in 1970.</p>
+<h2>History of Anápolis</h2>
+<p>The settlement began in the 18th century, due to the travels of the drovers to the region of gold mines in the nearby towns. Some of the travelers, when they did not find any more precious metals, decided to settle in the thorp. The first historical registry was written in 1819, when the French naturalist and traveler Auguste de Saint-Hillaire, traveling from Bonfim (Silvânia) towards Meia-Ponte (Pirenópolis), stays in the region called Tapirs' Farm. This name is due to the abundance of this animal in the region. The first official document was written on April 25, 1870, when a group of residents made a donation of some parts of their lands to the Our Lady of Saint Anne Patrimony.</p>
+<br><img id="old" src="images/Anápolis-Antiga-small.jpg" alt="image of old Anápolis">
+<p>According to a local myth, in 1859, Ana das Dores left Jaraguá towards Bonfim (Silvânia), on a mule train travel. One of the mules, which was carrying the statue of Saint Anne, got lost. When, the mule was found, it was not willing to move, and das Dores interpreted this as the desire of the Saint to stay there. After she promised to build a chapel in homage to the Saint, the mule started to move again. The erection of the building was done by her son, Gomes de Souza Ramos, eleven years later. In 1872, a document requesting the status of a parish was written. It was carried by Souza Ramos to the provincial president. The pledge was granted and the thorn became a parish on August 6, 1873.</p>
+<br>
+
+<p>José da Silva Batista moved to the region on February 28, 1882, from Meia-Ponte (Pirenópolis). Seeking greater autonomy, He and Sousa Ramos requested the incorporation of the town, which was granted on December 15, 1887. However, due to some obstacles mainly by the authorities from Meia-Ponte, which was concerned about the loss of taxes, it became a town 'de facto' on March 10, 1892, when Batista was named the president of the administrative board of the Santana das Antas town. The town became a city on July 31, 1907.</p>
+<br>
+<p>On January 9, 1924, the city became the first in the state to have electricity. The telegraph followed in 1926 and the railroad reached the city in 1935.</p>
+<h2>Geography</h2>
+<p>Anápolis is located in Center-Western Brazil. It is located in a plateau, called Central Plateau, at an elevation of 1,017 metres (3,337 ft). The area is 918.3 square kilometres (354.6 sq mi), and the limiting municipalities are Abadiânia, Campo Limpo de Goiás, Gameleira de Goiás, Goianápolis, Leopoldo de Bulhões, Nerópolis, Pirenópolis, Silvânia and Terezópolis de Goiás. Anápolis is also the center of the Anápolis Microregion, and belongs to the Goiás Center mesoregion.</p>
+<img src="images/250px-Brazil_location_map.svg.png" alt="map of Anápolis">
+<section>
+  
+  <div id="events">
+    <h2 id="ev">Events</h2>
+    <p> July 24: Protest agaisnt the President!
+    </p>
+      <p> 
+        August 15-16: Vaccines for people between ages of 18-30!
+        </p>
+    <p>September 23: Help who needs</p>
+    <p>November 20: End of Vaccine Campaign</p>
+  </div>
+ 
+</section>
+
+   
+
+
+
+
+<div id="contactinfo">
+  <div id="contacttext">
+    <h2 class="contactheading">Contact Information</h2>
+    
+    <p class="local">Av. Mato Grosso, 1115 Bairro Jundiaí, Anápolis - GO Brazil</p><br>
+    <p class="tel">+55(64) 3317-1420</p><br>
+    <p class="mail">acentrooeste1@hotmail.com</p> 
+
+   
+  <img id="local" src="images/iconmonstr-location-1-240.png" alt="icon for location">
+   
+  <img id="tel" src="images/iconmonstr-phone-1-240.png" alt="icon for telephone">
+  
+  <img id="mail" src="images/iconmonstr-email-2-240.png" alt="icon for email" >
+
+
+<div class="social">
+    <a href="https://www.instagram.com" target="_blank"
+      ><img src="images/1_Instagram_colored_svg_1-512.png" alt="icon for instagram" ></a>
+    <a href="https://www.facebook.com" target="_blank"><img src="images/1365px-Facebook_f_logo_(2019).png" alt="logo for facebook" ></a>
+    <a href="https://vm.tiktok.com" target="_blank"><img src="images/fad8233679eb82633a26003deeb2ea0b.png" alt="logo for TikTok" ></a>
+    </div>
+  </div>
+  
+ 
+</div>
+</section>
+<footer>
+  &copy;  
+
+   The Anápolis Chamber of Commerce | Brenda Cristiele de Medeiros Teodoro 
+
+
+
+   </footer>
+
+  
+
+
+  </body>
+
+  </html>

@@ -14,4 +14,52 @@ grid-row: 2;
   nav ul.hide{
     display: block;
   }
+  #first{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr;
+grid-gap: 3rem;
+  }
+
+  .ads{
+    grid-column: 1;
+    grid-row: 1;
+   
+  }
+
+  .join{
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .purpose{
+    grid-column: 3;
+    grid-row: 1;
+  }
+ #second{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+ }
+ .weathersummary{
+   grid-column: 1;
+   grid-row: 1;
+ }
+ #events{
+   grid-column: 2;
+   grid-row: 1;
+ }
+ #threef{
+grid-column: 1;
+grid-row: 2;
+
+ }
+ #threeday{
+  grid-column: 1;
+  grid-row:3;
+ 
+}
+#contacttext{
+  grid-column: 2;
+   grid-row: 3;
+}
 }

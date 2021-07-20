@@ -3,22 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My home page for the Chamber of Commerce</title>
+    <title>My join page for the Chamber of Commerce</title>
     <meta
     name="description"
     content="~This page will serve as an assignment which you serve as a galley."/>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="joincss/join-small.css">
-    <link rel="stylesheet" href="joincss/join-medium.css">
-    <link rel="stylesheet" href="joincss/join-large.css">
+    <link rel="stylesheet" href="css/joincss/join-small.css">
+    <link rel="stylesheet" href="css/joincss/join-medium.css">
+    <link rel="stylesheet" href="css/joincss/join-large.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     
-    <script defer src="js/home.js"></script>
+    <script defer src="js/join.js"></script>
   </head>
   <body>
   <header>
     <h2>Anápolis Chamber of Commerce</h2>
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/logo-chamber-red.png">
+      <source media="(min-width:500px)" srcset="images/logo-chamber-red.png">
+      <source media="(min-width: 200px)" srcset="images/logo-chamber-red.png">
+      <img id="logo" src="images/logo-chamber-red.png" alt="image of logo">
+    </picture>
     <button onclick="toggleMenu()">&#9776;</button>
 </header>
 <nav>

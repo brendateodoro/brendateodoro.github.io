@@ -22,6 +22,17 @@ a{
 #lastmod{
   color: white;
 }
+.button {
+  border: none;
+  color: #002087;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 header,footer {
   text-align: center;
   border: 1px solid #002087;
@@ -33,15 +44,7 @@ header,footer {
   width: auto;
 
 }
-button{
-  margin: .2rem 2%;
- 
-  border: none;
- 
-  color: #002087;
-  float: right;
-  font-family: 'Roboto', sans-serif;
-}
+
 nav {
 	background-color:#002087 ;
 	text-align: center;
@@ -176,12 +179,13 @@ nav ul.hide{
 }
 .ads{
   margin: 10px auto;
-  width: 50%;
+  
   display: grid;
   grid-template-columns: 3fr;
   grid-template-rows: 2fr;
   font-family: 'Roboto', sans-serif;
-  
+  height: min-content;
+  grid-gap: 0.5rem;
 }
 .ad1{
   border: 1px solid #670300;
@@ -204,13 +208,16 @@ nav ul.hide{
 #join{
   font-family: 'Roboto', sans-serif;
   color: #002087;
+ 
+
+ 
 }
 .join{
   margin: 10px auto;
-  width: 50%;
+  height: min-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr ;
 
 }
 
@@ -242,6 +249,13 @@ nav ul.hide{
   grid-column: 2;
   grid-row: 2;
 }
+.button{
+  grid-row: 3;
+  grid-column: 1;
+  height: min-content;
+  align-content: center;
+
+}
 #nonprofit{
   width: 30px;
   height: 30px;
@@ -258,7 +272,9 @@ nav ul.hide{
   width: 40px;
   height: 40px;
 }
+
 .purpose{
+  height: min-content;
   text-align: center;
   border: 1px solid #dbdbdb;
   border-radius: 25px;
@@ -266,7 +282,7 @@ nav ul.hide{
   background-color: #670300;
   color: #dbdbdb;
   font-family: 'Roboto', sans-serif;
-  width: auto;
+
   
 }
 #events{
@@ -279,7 +295,7 @@ nav ul.hide{
   box-shadow: 0 0 30px #670300;
   color: #dbdbdb;
   
-  width: 250px;
+  
   margin: 10px auto;
   font-family: 'Roboto', sans-serif;
  
@@ -300,16 +316,15 @@ nav ul.hide{
  
   border: 1px solid #dbdbdb;
 }
-#fiveh{
+#threef{
   font-family: 'Roboto', sans-serif;
   color: #002087;
 }
-#fiveday{
+#threeday{
   margin: 10px auto;
-  width: 50%;
+ 
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 5fr;
+ grid-template-columns: 3;
  
 }
 .monday{
@@ -317,7 +332,7 @@ nav ul.hide{
   padding: .5rem;
   color: #670300;
   font-family: sans-serif;
-  grid-row: 1;
+  grid-column: 1;
  
 }
 .tuesday{
@@ -325,7 +340,7 @@ nav ul.hide{
   padding: .5rem;
   color: #670300;
   font-family: sans-serif;
-  grid-row: 2;
+grid-column: 2;
   
 
 }
@@ -334,27 +349,12 @@ nav ul.hide{
   padding: .5rem;
   color: #670300;
   font-family: sans-serif;
-  grid-row: 3;
+grid-column: 3;
   
 
 }
-.thursday{
-  border: 1px solid #002087;
-  padding: .5rem;
-  color: #670300;
-  font-family: sans-serif;
-  grid-row: 4;
-  
 
-}
-.friday{
-  border: 1px solid #002087;
-  padding: .5rem;
-  color: #670300;
-  font-family: sans-serif;
-  grid-row: 5;
- 
-}
+
 #monday{
   width: 30px;
   height:30px;
@@ -363,69 +363,61 @@ nav ul.hide{
   width: 30px;
   height:30px;
 }
+
 #wednesday{
   width: 40px;
   height:40px;
 }
-#thursday{
-  width: 40px;
-  height: 40px;
-}
-#friday{
-  width: 30px;
-  height:30px;
-}
-
 #contactinfo{
   margin: 10px auto;
   background-color: #dbdbdb;
   font-family: 'Roboto', sans-serif;
   
-   width: 100%;
+ 
   }
  
 
   #contacttext{
     display: grid;
-    grid-template-columns: 10fr;
-    grid-template-rows: 10fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
   .contactheading{
-    grid-column: 4;
+    grid-column: 1;
     grid-row: 1;
   }
 .local{
-  grid-column: 5;
+  grid-column: 2;
    grid-row: 2;
  }
  .tel{
-   grid-column: 5;
+   grid-column: 2;
    grid-row: 3;
  }
  .mail{
-   grid-column: 5;
+   grid-column: 2;
    grid-row: 4;
  }
  #local{
-   grid-column: 4;
+   grid-column: 1;
    grid-row: 2;
    width: 40px;
    height: 40px;
  }
  #tel{
-   grid-column: 4;
+   grid-column: 1;
    grid-row: 3;
    width: 40px;
    height: 40px;
  }
  #mail{
-   grid-column: 4;
+   grid-column: 1;
    grid-row: 4;
    width: 40px;
    height: 40px;
   }
  .social {
-   grid-column: 5;
+   grid-column: 2;
    grid-row: 5;
    grid-gap: 10em;
    justify-content: end;
