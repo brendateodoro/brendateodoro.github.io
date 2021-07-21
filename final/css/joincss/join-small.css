@@ -92,13 +92,13 @@ nav ul.hide{
 }
 main{
   display: grid;
-  grid-template-columns: 2;
+  grid-template-rows: 2;
 }
 section{
-  grid-column: 1;
+  grid-row: 1;
 }
 .container {
-  grid-column: 2;
+  grid-row: 2;
   font-family: 'Roboto', sans-serif;
 }
 form{
@@ -145,11 +145,10 @@ form label.sbs{
 form input.submitBtn{
   border: none;
   background-color: #ffe801;
-  color: white;
-  border-radius: 1rem;
+  color: #002087;
   padding: .75rem 1.75rem;
   margin: 0 0 2rem 2%;
-  width: 96%
+  border-radius: 8px;
 }
 form label.top input:required{
   border-left: red solid 6px;
@@ -164,54 +163,21 @@ form label.top input:required:valid{
   
  
   }
- 
+  #levels{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background:  #670300;
+    border: 1px solid #002087;
+    padding: .5rem;
+    box-shadow: 0 0 30px #670300;
+    color: #dbdbdb;
+    width: 50%;
+    
+    margin: 10px auto;
+    font-family: 'Roboto', sans-serif;
+   
+  
+  }
 
-  #contacttext{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  }
-  .contactheading{
-    grid-column: 1;
-    grid-row: 1;
-  }
-.local{
-  grid-column: 2;
-   grid-row: 2;
- }
- .tel{
-   grid-column: 2;
-   grid-row: 3;
- }
- .mail{
-   grid-column: 2;
-   grid-row: 4;
- }
- #local{
-   grid-column: 1;
-   grid-row: 2;
-   width: 40px;
-   height: 40px;
- }
- #tel{
-   grid-column: 1;
-   grid-row: 3;
-   width: 40px;
-   height: 40px;
- }
- #mail{
-   grid-column: 1;
-   grid-row: 4;
-   width: 40px;
-   height: 40px;
-  }
- .social {
-   grid-column: 2;
-   grid-row: 5;
-   grid-gap: 10em;
-   justify-content: end;
- }
- .social img{
-   width: 50px;
-   height: 50px;
- }
+  
