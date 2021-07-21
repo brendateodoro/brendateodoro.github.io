@@ -40,3 +40,20 @@ function toggleMenu(){
   
   document.getElementById("primaryNav").classList.toggle("hide");
  }
+ var stores = document.getElementById("stores");
+
+ document.addEventListener("click", function (event) {
+   if (!event.target.matches(".button-list")) return;
+ 
+   // List view
+   event.preventDefault();
+   stores.classList.add("button-list");
+ });
+ 
+ document.addEventListener("click", function (event) {
+   if (!event.target.matches(".button-grid")) return;
+ 
+   // List view
+   event.preventDefault();
+   stores.classList.remove("button-list");
+ });

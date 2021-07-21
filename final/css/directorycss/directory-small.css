@@ -92,6 +92,29 @@ nav ul.hide{
 }
 * {box-sizing:border-box}
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.buttons {
+  display: flex;
+  justify-content: end;
+}
+.stores {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  }
+.stores.button-list{
+  grid-template-columns: 1fr;
+}
+ 
+
+  
+
 
 #contactinfo{
   margin: 10px auto;
@@ -101,7 +124,6 @@ nav ul.hide{
  
   }
  
-
   #contacttext{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
