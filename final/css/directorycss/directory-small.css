@@ -92,26 +92,30 @@ nav ul.hide{
 }
 * {box-sizing:border-box}
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  flex-direction: column;
-}
+
 .buttons {
   display: flex;
-  justify-content: end;
+  justify-content: left;
+ 
 }
-.stores {
-    display: grid;
-  grid-template-columns: 1fr 1fr;
+.button-list .stores{
+  border: 1px solid #002087;
+  margin : 10px;
+  padding: 10px 20px;
+  display:flex;
+  align-items: center;
+}
+
+.button-view{
   width: 100%;
-  }
-.stores.button-list{
-  grid-template-columns: 1fr;
 }
  
+.buttn-view section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
 
   
 
